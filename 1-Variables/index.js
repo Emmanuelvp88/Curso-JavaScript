@@ -1,8 +1,9 @@
-let num1 = 34, resultado = 0;
+let num1 = 34,
+    resultado = 0;
 var num2 = 67;
 
 resultado = num1 + num2;
- document.write("El resultado de tu suma es:",resultado);
+document.write("El resultado de tu suma es:", resultado);
 
 /*
 JavaScript tiene tres tipos de declaraciones de variables.

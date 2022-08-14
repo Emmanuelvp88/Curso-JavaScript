@@ -1,6 +1,8 @@
 let name = prompt("what is your name?");
 
-document.write(`Hola "${name}" tu nombre se concateno con esta cadena de caracteres cuando lo ingresaste con "Prompt"`);
+document.write(
+    `Hola "${name}" tu nombre se concateno con esta cadena de caracteres cuando lo ingresaste con "Prompt"`
+);
 
 /*window.prompt()indica al navegador que muestre un cuadro de diálogo con un mensaje opcional que solicita
 al usuario que ingrese algún texto y que espere hasta que el usuario envíe el texto o cancele el cuadro de diálogo.

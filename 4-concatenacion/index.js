@@ -1,5 +1,5 @@
 let cadena1 = "Hola como estas"
-let cadena2 = "que andas haceindo?"
+let cadena2 = " que andas haceindo?"
 alert(cadena1 + cadena2);
 //Concatenamos las cadenas de caracteres de  manera comun con el operador "+".
 
