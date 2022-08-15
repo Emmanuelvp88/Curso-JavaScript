@@ -1,9 +1,5 @@
 let name = prompt("what is your name?");
-
-document.write(
-    `Hola "${name}" tu nombre se concateno con esta cadena de caracteres cuando lo ingresaste con "Prompt"`
-);
-alert("has ingresado esto: " + name);
+alert("Has ingresado esto: " + name);
 
 /*
 *alert*
