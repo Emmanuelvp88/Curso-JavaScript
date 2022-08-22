@@ -1,3 +1,8 @@
+
+let numero1 = 23;
+let numero2 = 26;
+
+alert(numero1 == numero2);
 alert(`VAMOS AVER TODOS LOS OPERADORES DE COMPARACION
         1. ==  : igual que.
         2. === : Estrictamente igual que.
