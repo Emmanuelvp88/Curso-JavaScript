@@ -19,23 +19,17 @@ operacion = parseInt(operacion);
 
 
 if (operacion == 1) {
-    resultado = num1 + num2;
-    alert(`el resultado de la suma es: ${resultado}`);
+    alert(`el resultado de la suma es: ${num1 += num2}`);
 } else if (operacion == 2) {
-    resultado = num1 - num2;
-    alert(`el resultado de la resta es: ${resultado}`);
+    alert(`el resultado de la resta es: ${num1 -= num2}`);
 } else if (operacion == 3) {
-    resultado = num1 * num2;
-    alert(`el resultado de la multiplicacion es: ${resultado}`);
+    alert(`el resultado de la multiplicacion es: ${num1 *= num2}`);
 } else if (operacion == 4) {
-    resultado = num1 / num2;
-    alert(`el resultado de la divicion es: ${resultado}`);
+    alert(`el resultado de la divicion es: ${num1 /= num2}`);
 } else if (operacion == 5) {
-    resultado = num1 % num2;
-    alert(`el resultado del resto es: ${resultado}`);
+    alert(`el resultado del resto es: ${num1 %= num2}`);
 } else if (operacion == 6) {
-    resultado = num1 ** num2;
-    alert(`el resultado del exponente es: ${resultado}`);
+    alert(`el resultado del exponente es: ${num1 **= num2 }`);
 } else {
     alert("La operacion seleccionada no existe, favor de seleccionar otra operacion. ");
 }
