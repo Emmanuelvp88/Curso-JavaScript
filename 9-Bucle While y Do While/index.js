@@ -1,10 +1,11 @@
-document.write("<h1>Estructuras Condicinales While, di while, For</h1>");
+document.write("<h1>Estructuras Condicinales While, do while</h1>");
 document.write("<h2>Estructura While</h2>");
 
 let numero = 0;
 
 /* While Significa "Mientras", asi que es bucle hace lo que contenga en su cuerpo de su 
-    estructura mintras la condicion que estan en los parentesis se cumpla.*/
+    estructura mintras la condicion que estan en los parentesis se cumpla. y son conocidos 
+    como estructurasde control infinitas o bucles infinitos*/
 document.write(`<h3>Vamos a imprimir la variable "numero" mintras sea menor o igual a 10</h3>`);
 while (numero <= 10) {
     document.write(`El valor de la variable numero es: ${numero} <br>`);
