@@ -1,7 +1,7 @@
 document.write(`<h2>Bucles For "Bucles Finitos"</h2>`)
 
-/*El sencillo "for" es literalmente igual que en JAVA*/
 document.write(`<h3> Bucle 'for' simple</h3>`);
+/*El "for" sencillo es literalmente igual que en JAVA*/
 for (let i = 0; i <= 10; i++) {
     document.write(`El valor actual de "i" es: ${i} <br>`);
 };
