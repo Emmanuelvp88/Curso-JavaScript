@@ -10,7 +10,8 @@ document.write(pc1[3] + `<br>`);
 // o podemos imprimir el array compleeto
 document.write(pc1);
 
-// Array Asosiativos
+// Array Asosiativos, estos asocian un nombre a las pociciones
+// y despues de los dos puntos se pone el contenido que va en esa posicion.
 document.write("<h2> Array Asociativos</h2>");
 let pc2 = {
     nombre: "Emma pc",
@@ -20,7 +21,7 @@ let pc2 = {
 };
 
 // Impresion del array Asociativo
-// El nombre asociativo para la posicion se debe de poner entre Comillas
+// El nombre asociado a la posicion se debe de poner entre Comillas
 document.write(`El nombre de mi PC : <b>${pc2["nombre"]}</b><br>
                 Tiene un Procesador: <b>${pc2["procesador"]}</b><br>
                         Memoria RAM: <b>${pc2["Ram"]}</b><br>
