@@ -13,3 +13,4 @@ for (let animales in mascotas) {
     }
     document.write(` ${mascotas[animales]} ,`);
 }
+    document.write(`Hola que transita`);
