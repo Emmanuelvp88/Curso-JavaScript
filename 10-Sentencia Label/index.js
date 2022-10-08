@@ -18,11 +18,5 @@ for (let animales in mascotas) {
         //Recorremos el array con la variable "animales" ya que en el "for in" almacena el numero de las posiciones del array.
         document.write(` ${mascotas[animales]} ,`);
     }
-<<<<<<< HEAD
-    document.write(` ${mascotas[animales]} ,`);
-}
-    document.write(`Hola que transita`);
-=======
     
 }
->>>>>>> working
