@@ -1,12 +1,13 @@
 // Array normal y comun
-document.write("<h2>Array comun</h2>");
+document.write("<h2>Array comun con salto de linea</h2>");
 var pc1 = ["nombre", "RAM", "Procesador", "almacenaminto"];
-// Imprimimos cada pososicion del array con salto de linea
+// Imprimimos cada pososicion del array por separado con salto de linea
 document.write(pc1[0] + `<br>`);
 document.write(pc1[1] + `<br>`);
 document.write(pc1[2] + `<br>`);
 document.write(pc1[3] + `<br>`);
 
+document.write(`<h2>Array completo asi como va</h2>`);
 // o podemos imprimir el array compleeto
 document.write(pc1);
 
