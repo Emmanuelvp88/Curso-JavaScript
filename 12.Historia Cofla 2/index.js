@@ -44,14 +44,14 @@ for(i = 0; i < 30; i++){
 }
 
 for(alumno in alumnosTotales){
-    let resultado  = `${alumnosTotales[alumno][0]}: <br>
-    Presentes: ${alumnosTotales[alumno][1]}<br>
-    Ausentes: ${30 - alumnosTotales[alumno][1]}
+    let resultado  = `El alumno: ${alumnosTotales[alumno][0]}: <br>
+    Estubo presente: ${alumnosTotales[alumno][1]} dias<br>
+    Y ausente: ${30 - alumnosTotales[alumno][1]} dias <br>
     `;
     if (30 - alumnosTotales[alumno][1] < 18){
-        document.write(`Estas reprobado por faltas`);
+        resultado+= ` por lo tanto el alumno ${alumnosTotales[alumno][0]} Esta reprobado por faltas <br>`;
     }else{
-        document.write(`Èstas aprobado`);
+        resultado+= `Felicidades ${alumnosTotales[alumno][0]}Èsta aprobado <br><br>`;
     }
+    document.write(resultado);
 }
-document.write(resultado);
