@@ -42,3 +42,16 @@ for(i = 0; i < 30; i++){
         tomarAsistencia(alumnosTotales[alumno][0], alumno);
     }
 }
+
+for(alumno in alumnosTotales){
+    let resultado  = `${alumnosTotales[alumno][0]}: <br>
+    Presentes: ${alumnosTotales[alumno][1]}<br>
+    Ausentes: ${30 - alumnosTotales[alumno][1]}
+    `;
+    if (30 - alumnosTotales[alumno][1] < 18){
+        document.write(`Estas reprobado por faltas`);
+    }else{
+        document.write(`Èstas aprobado`);
+    }
+}
+document.write(resultado);
