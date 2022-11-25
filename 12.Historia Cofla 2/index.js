@@ -24,15 +24,21 @@
 
 
 let cantidad = prompt(`Cuantos alumnos son?`);
-const alumnos = [];
+const alumnosTotales = [];
 
 for (let i = 0; i < cantidad; i++){
-    alumnos[i] = [prompt(`Dime el nombre del alumno numero ${i+1}`)]
+    alumnosTotales[i] = [prompt(`Dime el nombre del alumno numero ` + (i+1)), 0]
 }
 
-const lista = (nombre, presente)=>{
-    let asistencia = prompt(nombre);
+const tomarAsistencia = (nombre, p)=>{
+    let asistencia = prompt(`Escribe "p" si el alumno ${nombre} estubo presente el dia ${i+1}`);
     if (asistencia == "p" || asistencia == "P"){
-        alumnos[i][1]++;
+        alumnosTotales[p][1]++;
+    }
+}
+
+for(i = 0; i < 30; i++){
+    for(alumno in alumnosTotales){
+        tomarAsistencia(alumnosTotales[alumno][0], alumno);
     }
 }
