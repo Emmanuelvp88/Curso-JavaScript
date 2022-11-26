@@ -106,3 +106,6 @@ else if(operacion == 5){
 else if(operacion == 6){
     alert(`Èl resultado de tu exponencializacion es: ${exponente(num1, num2)}`);
 }
+else{
+    alert(`No se encontro nunguna operacion`);
+}
