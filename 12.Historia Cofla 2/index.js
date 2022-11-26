@@ -59,23 +59,50 @@
 
 let operacion = prompt(`Hola, bienvenido a la calculadora de Emmanuel.
         Que poeracion deseas realizar.?
-        1.- suma 
-        2.- resta
-        3.- multiplicacion
-        4.- Divicion`);
-let num1 = prompt(`Ingresa tu primer numero`);
-let num2 = prompt(`Ingresa tu segundo nnumero`);
+        1.- Suma 
+        2.- Resta
+        3.- Multiplicacion
+        4.- Divicion
+        5.- Resto
+        6.- Porcentaje`);
+var num1 = prompt(`Ingresa tu primer numero`);
+var num2 = prompt(`Ingresa tu segundo nnumero`);
 
 const suma = (num1, num2)=>{
     return resultado = parseInt(num1) + parseInt(num2);
 }
-const resta = ()=>{
+const resta = (num1, num2)=>{
     return resultado = parseInt(num1) - parseInt(num2);
 }
-const multiplicacion = ()=>{
+const multiplicacion = (num1, num2)=>{
     return resultado = parseInt(num1) * parseInt(num2);
 }
-if (operacion == 1){
-    document.write('el resultado de tu suma es: ' + suma(num1,num2));
+const divicion = (num1, num2)=>{
+    return resultado = parseInt(num1) / parseInt(num2);
+}
+const resto = (num1, num2)=>{
+    return resultado = parseInt(num1) % parseInt(num2);
+}
+const exponente = (num1, num2)=>{
+    return resultado = parseInt(num1) ** parseInt(num2);
 }
 
+
+if (operacion == 1){
+    alert('el resultado de tu suma es: ' + suma(num1,num2));
+}
+else if(operacion == 2){
+    alert(`Èl resultado de tu resta es: ${resta(num1, num2)}`);
+}
+else if(operacion == 3){
+    alert(`El resutado de tu multiplicacion es: ${multiplicacion(num1, num2)}`);
+}
+else if(operacion == 4){
+    alert(`el resultado de tu dicvicion es: ${divicion(num1, num2)}`);
+}
+else if(operacion == 5){
+    alert(`El resultado de tu resto es: ${resto(num1, num2)}`);
+}
+else if(operacion == 6){
+    alert(`Èl resultado de tu exponencializacion es: ${exponente(num1, num2)}`);
+}
