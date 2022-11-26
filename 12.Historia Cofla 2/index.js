@@ -63,7 +63,7 @@ let cantidad = prompt(`Cuantos alumnos son?`);
 numAlumnos = [];
 
 for(i = 0; i < cantidad; i++){
-    numAlumnos[i] = [prompt(`Dame el nombre del alumno nnumero: ` + i+1), 0]
+    numAlumnos[i] = [prompt(`Dame el nombre del alumno nnumero: ` + (i+1)), 0]
 }
 
 const asistencias = (nombre, presencia)=>{
@@ -77,6 +77,16 @@ for (i = 0; i < 30; i++){
         asistencias(numAlumnos[alumno][0], alumno);
     }
 }
+
 for (mostrar in numAlumnos){
-    
+    let resultado = `El alumno ${numAlumnos[mostrar][0]}<br>
+    Asistio: ${numAlumnos[mostrar][1]} dias<br>
+    falto: ${30 - numAlumnos[mostrar][1]} dias<br>
+    `;
+    if(numAlumnos[mostrar][1] < 18){
+        resultado+= numAlumnos[mostrar][0] + ' estas reprobado por faltas<br><br>'
+    }else{
+        resultado+= numAlumnos[mostrar][0] + ' felicidades has aprobado<br><br>'
+    }
+    document.write(resultado)
 }
