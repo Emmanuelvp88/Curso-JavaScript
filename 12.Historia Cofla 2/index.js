@@ -57,6 +57,25 @@
 // }
 
 
+let operacion = prompt(`Hola, bienvenido a la calculadora de Emmanuel.
+        Que poeracion deseas realizar.?
+        1.- suma 
+        2.- resta
+        3.- multiplicacion
+        4.- Divicion`);
+let num1 = prompt(`Ingresa tu primer numero`);
+let num2 = prompt(`Ingresa tu segundo nnumero`);
 
-
+const suma = (num1, num2)=>{
+    return resultado = parseInt(num1) + parseInt(num2);
+}
+const resta = ()=>{
+    return resultado = parseInt(num1) - parseInt(num2);
+}
+const multiplicacion = ()=>{
+    return resultado = parseInt(num1) * parseInt(num2);
+}
+if (operacion == 1){
+    document.write('el resultado de tu suma es: ' + suma(num1,num2));
+}
 
