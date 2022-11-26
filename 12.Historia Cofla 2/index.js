@@ -23,35 +23,60 @@
 // entrada(11);
 
 
+// let cantidad = prompt(`Cuantos alumnos son?`);
+// const alumnosTotales = [];
+
+// for (let i = 0; i < cantidad; i++){
+//     alumnosTotales[i] = [prompt(`Dime el nombre del alumno numero ` + (i+1)), 0]
+// }
+
+// const tomarAsistencia = (nombre, p)=>{
+//     let asistencia = prompt(`Escribe "p" si el alumno ${nombre} estubo presente el dia ${i+1}`);
+//     if (asistencia == "p" || asistencia == "P"){
+//         alumnosTotales[p][1]++;
+//     }
+// }
+
+// for(i = 0; i < 30; i++){
+//     for(alumno in alumnosTotales){
+//         tomarAsistencia(alumnosTotales[alumno][0], alumno);
+//     }
+// }
+
+// for(alumno in alumnosTotales){
+//     let resultado  = `<b>El alumno:</b> ${alumnosTotales[alumno][0]}: <br>
+//     <b>Estubo presente:</b> ${alumnosTotales[alumno][1]} dias<br>
+//     <b>Y ausente:</b> ${30 - alumnosTotales[alumno][1]} dias <br>
+//     `;
+//     if (30 - alumnosTotales[alumno][1] > 18){
+//         resultado+= `<b style = color:red>Lo siento  ${alumnosTotales[alumno][0]} estas reprobado@ por faltas</b><br><br>`;
+//     }else{
+//         resultado+= `<b style = color:blue>Felicidades ${alumnosTotales[alumno][0]} Èstas aprobado@ </b><br><br>`;
+//     }
+//     document.write(resultado);
+// }
+
+
+
+
 let cantidad = prompt(`Cuantos alumnos son?`);
-const alumnosTotales = [];
+numAlumnos = [];
 
-for (let i = 0; i < cantidad; i++){
-    alumnosTotales[i] = [prompt(`Dime el nombre del alumno numero ` + (i+1)), 0]
+for(i = 0; i < cantidad; i++){
+    numAlumnos[i] = [prompt(`Dame el nombre del alumno nnumero: ` + i+1), 0]
 }
 
-const tomarAsistencia = (nombre, p)=>{
-    let asistencia = prompt(`Escribe "p" si el alumno ${nombre} estubo presente el dia ${i+1}`);
-    if (asistencia == "p" || asistencia == "P"){
-        alumnosTotales[p][1]++;
+const asistencias = (nombre, presencia)=>{
+    let numAsistencia = prompt(` Escribe "p" si el alumno ${nombre} se presento el dia: ${i+1}`);
+    if(numAsistencia == "p" || numAsistencia == "P"){
+        numAlumnos[presencia][1]++;
     }
 }
-
-for(i = 0; i < 30; i++){
-    for(alumno in alumnosTotales){
-        tomarAsistencia(alumnosTotales[alumno][0], alumno);
+for (i = 0; i < 30; i++){
+    for(alumno in numAlumnos){
+        asistencias(numAlumnos[alumno][0], alumno);
     }
 }
-
-for(alumno in alumnosTotales){
-    let resultado  = `El alumno: ${alumnosTotales[alumno][0]}: <br>
-    Estubo presente: ${alumnosTotales[alumno][1]} dias<br>
-    Y ausente: ${30 - alumnosTotales[alumno][1]} dias <br>
-    `;
-    if (30 - alumnosTotales[alumno][1] < 18){
-        resultado+= ` por lo tanto el alumno ${alumnosTotales[alumno][0]} Esta reprobado por faltas <br>`;
-    }else{
-        resultado+= `Felicidades ${alumnosTotales[alumno][0]}Èsta aprobado <br><br>`;
-    }
-    document.write(resultado);
+for (mostrar in numAlumnos){
+    
 }
