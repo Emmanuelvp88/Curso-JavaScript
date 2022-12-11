@@ -3,17 +3,17 @@
 //Si eres mayor de edad y el primero en llegar despues de las 2am entras gratis
 let free = false;
 const entrada = (time) =>{
-    let edad = prompt(`Bienvenido cual es tu edad`);
+    let edad = prompt(`Estas en Discoinfierno, ¿cual es tu edad?`);
     if(edad >= 18){
-        alert(`Bienvenido`)
+        alert(`Bienvenido a la Disco`)
         if(time >= 2 && time<= 7 && free == false){
             alert(`Eres la primer persona en entrar despues de la 2am, tu entrada es gratis`);
             free = true;
         }else{
-            alert(`Paga tu entrada y pasa`);
+            alert(`Solo Paga tu entrada y pasa`);
         }
     }else{
-        alert(`lo siento no puedes pasar, eres menor de edad.`)
+        alert(`Lo siento no puedes pasar, eres menor de edad.`)
     }
 }
 entrada(1);
