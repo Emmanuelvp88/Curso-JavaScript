@@ -1,14 +1,16 @@
 class Celulares {
-    propiedades(tamaño, resolucion, camara, ram) {
-        this.tamaño = tamaño;
+    /**Este es el constructor que va recibir los parametros del objeto */
+    constructor(dimencion, resolucion, camara, ram) {
+        this.dimencion = dimencion;
         this.resolucion = resolucion;
         this.camara = camara;
         this.ram = ram;
+        // this.info = ;
     }
 
     infoCel1() {
-        document.write(`el celulra1 es de: ${this.tamaño},
-            ${this.resolucion},${this.camara}, ${this.ram}`);
+        document.write(`el celulra1 es de: ${this.dimencion},
+        ${this.resolucion},${this.camara}, ${this.ram}`);
     }
 }
 
