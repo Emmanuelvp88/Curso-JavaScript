@@ -24,7 +24,6 @@ entrada(1);
 entrada(10);
 entrada(11);
 
-
 //Programa para calificar alumnos mediante sus asistencias
 //tomamos la cantidad de alumnos
 let cantidad = prompt(`Cuantos alumnos son?`);
