@@ -57,3 +57,10 @@ celulra1.tomarFoto();
 celulra1.infoCel();
 celulra2.infoCel();
 celulra3.infoCel();
+
+class celAltaGama extends Celulares {
+    costructor() {
+        super(dimencion, resolucion, camara, ram, resCamEx);
+        this.camaraExtra = resCamEx;
+    }
+}
