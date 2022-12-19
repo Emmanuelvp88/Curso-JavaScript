@@ -1,7 +1,8 @@
 //clase padre "Celulares"
 class Celulares {
     /**Este es el constructor que va recibir los parametros del objeto */
-    constructor(dimencion, resolucion, camara, ram) {
+    constructor(color, dimencion, resolucion, camara, ram) {
+        this.color = color;
         this.dimencion = dimencion;
         this.resolucion = resolucion;
         this.camara = camara;
@@ -36,6 +37,7 @@ class Celulares {
 
     infoCel() {
         return document.write(`
+        el celular es de color: <b>${this.color}</b><br>
         el celulra es de:<b>${this.dimencion}</b> <br>
         Resulucion de: :<b>${this.resolucion}</b> <br>
         Tien memoria ram de: <b>${this.ram}</b> <br>
@@ -59,8 +61,23 @@ celulra2.infoCel();
 celulra3.infoCel();
 
 class celAltaGama extends Celulares {
-    costructor() {
-        super(dimencion, resolucion, camara, ram, resCamEx);
-        this.camaraExtra = resCamEx;
+    costructor(color, dimencion, resolucion, camara, ram, resCamEx) {
+        super(color, dimencion, resolucion, camara, ram);
+        this.resCamEx = resCamEx;
+    }
+    info(){
+        document.write(`
+        el celular es de color: <b>${this.color}</b><br>
+        el celulra es de:<b>${this.dimencion}</b> <br>
+        Resulucion de: :<b>${this.resolucion}</b> <br>
+        Tien memoria ram de: <b>${this.ram}</b> <br>
+        tiene una camara de: <b>${this.camara}</b> <br><br>
+        tiene una camara extra: <b>${this.resCamEx}</b><br>
+        `);
     }
 }
+
+const cel1 = new celAltaGama("5.5'", "camara extre full hd", "30mpx", "3gb", "camara extra de 40mpx"  );
+const cel2 = new celAltaGama("6'", "camara extre hd", "10mpx", "5gb", "camara extra de 80mpx" );
+
+cel1.info();
