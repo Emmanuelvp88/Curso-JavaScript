@@ -28,14 +28,14 @@ class Celulares {
             alert("La foto se atomado en una resolucion de: " + this.resolucion);
         }
     }
-    brabarVideo(){
-        if(this.encendido == true){
+    brabarVideo() {
+        if (this.encendido == true) {
             alert("Grabando video en resolucion: " + this.resolucion);
         }
     }
 
     infoCel() {
-       return document.write(`
+        return document.write(`
         el celulra es de:<b>${this.dimencion}</b> <br>
         Resulucion de: :<b>${this.resolucion}</b> <br>
         Tien memoria ram de: <b>${this.ram}</b> <br>
