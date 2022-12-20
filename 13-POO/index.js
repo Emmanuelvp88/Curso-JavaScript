@@ -1,12 +1,13 @@
 //clase padre "Celulares"
 class Celulares {
     /**Este es el constructor que va recibir los parametros del objeto */
-    constructor(color, dimencion, resolucion, camara, ram) {
+    constructor(color, dimencion, resolucion, camara, ram, camEx) {
         this.color = color;
         this.dimencion = dimencion;
         this.resolucion = resolucion;
         this.camara = camara;
         this.ram = ram;
+        this.cam = camEx;
         this.encendido = false;
     }
     botonEncender() {
@@ -37,47 +38,50 @@ class Celulares {
 
     infoCel() {
         return document.write(`
-        el celular es de color: <b>${this.color}</b><br>
-        el celulra es de:<b>${this.dimencion}</b> <br>
-        Resulucion de: :<b>${this.resolucion}</b> <br>
-        Tien memoria ram de: <b>${this.ram}</b> <br>
-        tiene una camara de: <b>${this.camara}</b> <br><br>
+        color: <b>${this.color}</b><br>
+        tamaño: <b>${this.dimencion}</b><br>
+        camara:<b>${this.camara}</b> <br>
+        Resulucion: <b>${this.resolucion}</b> <br>
+        Tien memoria ram de: <b>${this.ram}</b><br> <br>
+        
         
         `);
     }
 }
 /**Creamos un nuevo objeto en donde vamos a pasar todos los parametros */
-const celulra1 = new Celulares("5'", "ful hd", "50mx", "6gb");
-const celulra2 = new Celulares("5.5'", "hd", "30mx", "2gb");
-const celulra3 = new Celulares("4.3'", "ultra hd", "70mx", "6gb");
+// const celulra1 = new Celulares("negro","5'", "ful hd", "50mx", "6gb");
+// const celulra2 = new Celulares("verde","5.5'", "hd", "30mx", "2gb");
+// const celulra3 = new Celulares("aqua","4.3'", "ultra hd", "70mx", "6gb");
 
-celulra1.botonEncender();
-celulra1.reiniciar();
-celulra1.brabarVideo();
-celulra1.tomarFoto();
+// celulra1.botonEncender();
+// celulra1.reiniciar();
+// celulra1.brabarVideo();
+// celulra1.tomarFoto();
 
-celulra1.infoCel();
-celulra2.infoCel();
-celulra3.infoCel();
+// celulra1.infoCel();
+// celulra2.infoCel();
+// celulra3.infoCel();
 
-class celAltaGama extends Celulares {
-    costructor(color, dimencion, resolucion, camara, ram, resCamEx) {
-        super(color, dimencion, resolucion, camara, ram);
-        this.resCamEx = resCamEx;
+class celAltaGama extends Celulares{
+    costructor(color,dimencion, resolucion, camara, ram, cam) {
+        Super(color, dimencion, resolucion, camara, ram);
+        this.resCamEx = cam;   
+    }
+    grabandoVideo(){
+        document.write("Estas rgabando video");
+    }
+    reconocimintoFacial(){
+        document.write("Ejecutando reconociminto facial");
     }
     info(){
-        document.write(`
-        el celular es de color: <b>${this.color}</b><br>
-        el celulra es de:<b>${this.dimencion}</b> <br>
-        Resulucion de: :<b>${this.resolucion}</b> <br>
-        Tien memoria ram de: <b>${this.ram}</b> <br>
-        tiene una camara de: <b>${this.camara}</b> <br><br>
-        tiene una camara extra: <b>${this.resCamEx}</b><br>
-        `);
+        this.infoCel() + document.write(`tiene una camara extra: <b>${this.resCamEx}</b><br>`);
     }
 }
 
-const cel1 = new celAltaGama("5.5'", "camara extre full hd", "30mpx", "3gb", "camara extra de 40mpx"  );
-const cel2 = new celAltaGama("6'", "camara extre hd", "10mpx", "5gb", "camara extra de 80mpx" );
+const cel1 = new celAltaGama("Negro","5.5'", "full hd", "30mpx", "3gb","40mpx");
+const cel2 = new celAltaGama("Rojo","6'", "hd", "10mpx", "5gb", "80mpx" );
 
-cel1.info();
+// document.write(`
+cel1.info()
+cel2.info() 
+// `);
