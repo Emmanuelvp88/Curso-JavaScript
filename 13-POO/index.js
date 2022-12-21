@@ -1,13 +1,12 @@
 //clase padre "Celulares"
 class Celulares {
     /**Este es el constructor que va recibir los parametros del objeto */
-    constructor(color, dimencion, resolucion, camara, ram, camEx) {
+    constructor(color, dimencion, resolucion, camara, ram) {
         this.color = color;
         this.dimencion = dimencion;
         this.resolucion = resolucion;
         this.camara = camara;
         this.ram = ram;
-        this.cam = camEx;
         this.encendido = false;
     }
     botonEncender() {
@@ -42,46 +41,48 @@ class Celulares {
         tamaño: <b>${this.dimencion}</b><br>
         camara:<b>${this.camara}</b> <br>
         Resulucion: <b>${this.resolucion}</b> <br>
-        Tien memoria ram de: <b>${this.ram}</b><br> <br>
-        
-        
+        Tien memoria ram de: <b>${this.ram}</b><br><br>
         `);
     }
 }
 /**Creamos un nuevo objeto en donde vamos a pasar todos los parametros */
-// const celulra1 = new Celulares("negro","5'", "ful hd", "50mx", "6gb");
-// const celulra2 = new Celulares("verde","5.5'", "hd", "30mx", "2gb");
-// const celulra3 = new Celulares("aqua","4.3'", "ultra hd", "70mx", "6gb");
+const celulra1 = new Celulares("negro","5'", "ful hd", "50mx", "6gb");
+const celulra2 = new Celulares("verde","5.5'", "hd", "30mx", "2gb");
+const celulra3 = new Celulares("aqua","4.3'", "ultra hd", "70mx", "6gb");
 
-// celulra1.botonEncender();
-// celulra1.reiniciar();
-// celulra1.brabarVideo();
-// celulra1.tomarFoto();
+celulra1.botonEncender();
+celulra1.reiniciar();
+celulra1.brabarVideo();
+celulra1.tomarFoto();
 
-// celulra1.infoCel();
-// celulra2.infoCel();
-// celulra3.infoCel();
 
-class celAltaGama extends Celulares{
-    costructor(color,dimencion, resolucion, camara, ram, cam) {
-        Super(color, dimencion, resolucion, camara, ram);
-        this.resCamEx = cam;   
+celulra1.infoCel();
+celulra2.infoCel();
+celulra3.infoCel();
+
+class celAltaGama extends Celulares {
+    constructor(color, dimencion, resolucion, camara, ram, cam) {
+        super(color, dimencion, resolucion, camara,ram,);
+        this.camEx = cam;
     }
-    grabandoVideo(){
-        document.write("Estas rgabando video");
+    //metodo para grabar video
+    grabandoVideo() {
+        alert("Estas rgabando video");
     }
-    reconocimintoFacial(){
-        document.write("Ejecutando reconociminto facial");
+    //metodo para el reconiciminto facila
+    reconocimintoFacial() {
+        alert("Ejecutando reconociminto facial");
     }
-    info(){
-        this.infoCel() + document.write(`tiene una camara extra: <b>${this.resCamEx}</b><br>`);
+    //Agregamos otro metodo para mostrar la data, el cual lleva dentro el otro metodo "infoCel"
+    infoaltaGama() {
+        return this.infoCel() + document.write(`resulucion de camara extra: <b>${this.camEx}</b><br><br>`);
     }
 }
 
-const cel1 = new celAltaGama("Negro","5.5'", "full hd", "30mpx", "3gb","40mpx");
-const cel2 = new celAltaGama("Rojo","6'", "hd", "10mpx", "5gb", "80mpx" );
+const cel1 = new celAltaGama("Negro", "5.5'", "Full HD", "30mpx", "3gb", "superFull HD");
+const cel2 = new celAltaGama("Rojo", "6'", "hd", "10mpx", "5gb", "Full HD", "osnoidn");
 
-// document.write(`
-cel1.info()
-cel2.info() 
-// `);
+cel1.grabandoVideo();
+cel1.reconocimintoFacial();
+
+document.write(cel1.infoaltaGama(),  cel2.infoaltaGama());
