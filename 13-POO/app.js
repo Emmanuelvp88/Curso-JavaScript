@@ -36,21 +36,30 @@ class App{
         }
     }
     infoApp(){
-        return ` 
+        document.write(` 
             Numero de descargas: <b>${this.descargas}</b><br>
             Calificacion: <b>${this.puntuacion}</b><br>
             Pesa: <b>${this.peso}</b><br><br>
-        `
+        `)
     }
 }
 
 
 
-var app1 = new App("24", "5 estrellas", "34mb");
-// app1.instalar();
-// app1.iniciarApp();
+const app1 = new App("24", "5 estrellas", "34mb");
+const app2 = new App("1023", "3.5", "45mb");
 
-document.write(app1.infoApp());
+app1.instalar();
+app1.iniciarApp();
+app1.cerrarApp();
+app1.desistalar();
+app1.infoApp();
+
+app2.instalar();
+app2.iniciarApp();
+app2.cerrarApp();
+app2.desistalar();
+app2.infoApp();
 
 
 
