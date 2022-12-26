@@ -8,3 +8,13 @@ document.write(resultado );
 
 resultado = cadPrueba + "Emamnuel <br>";//equivalente a usar "concat"
 document.write(resultado);
+
+/*"startWith" Compara que una cadena empiece con los mismos caracteres que otra y regresara
+ "true"  de lo contrario regresara "false" */
+cadPrueba = "Probamos el segundo metodo"
+let comparar = "Prob";
+resultado = cadPrueba.startsWith(comparar)
+document.write(`¿"cadPrueba" empieza con la misma linea de caracteres, que la cadena "comparar"?: ${resultado} <br>`);
+comparar = "odo";
+resultado = cadPrueba.endsWith(comparar);
+document.write(`¿cadPrueba termona con la misma linea de cararteres que la cadena "comparar"?: ${resultado} <br>`);
