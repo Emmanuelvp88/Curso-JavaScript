@@ -15,6 +15,8 @@ cadPrueba = "Probamos el segundo metodo"
 let comparar = "Prob";
 resultado = cadPrueba.startsWith(comparar)
 document.write(`¿"cadPrueba" empieza con la misma linea de caracteres, que la cadena "comparar"?: ${resultado} <br>`);
+
+/**"endsWith" se encarga de comprarar que los ultimos caracteres de una cadea X sea igual a lso ultimos de otra cadena X */
 comparar = "odo";
 resultado = cadPrueba.endsWith(comparar);
 document.write(`¿cadPrueba termona con la misma linea de cararteres que la cadena "comparar"?: ${resultado} <br>`);
