@@ -20,12 +20,11 @@ document.write(`¿"cadPrueba" empieza con la misma linea de caracteres, que la c
     y devuelve "true" si lso caracteres son los mismos  o "false" si no.*/
 comparar = "odo";
 resultado = cadPrueba.endsWith(comparar);
-document.write(`¿cadPrueba termina con la misma linea de cararteres que la cadena "comparar"?: ${resultado} <br>`);
+document.write(`¿La cadena "<b>${cadPrueba}</b>" termina con la misma linea de cararteres que la cadena "<b>${comparar}</b>"?: ${resultado} <br>`);
 
 /* "includes" comprueba que una cadena se encuentre incluida dentro de otra cadena "X", y si se encuentra incluida
 nos regresa "true" de lo contrario nos devuelve "false"*/
-
 cadPrueba = "Emmanuel sera un programador exitoso"
 comparar = "un"
 resultado = cadPrueba.includes(comparar);
-document.write(`la cadena "<b>${comparar}</b>" se encuentra incluida en la cadena "<b>${cadPrueba}</b>"?: ${resultado}`);
+document.write(`La cadena "<b>${comparar}</b>" se encuentra incluida en la cadena "<b>${cadPrueba}</b>"?: ${resultado}`);
