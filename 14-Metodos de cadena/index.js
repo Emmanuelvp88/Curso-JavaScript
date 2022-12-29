@@ -13,15 +13,15 @@ document.write(`<b>Equivalente a concat: </b> ${resultado}`);
 /*"startWith" Compara que una cadena empiece con los mismos caracteres que otra y regresara
  "true"  de lo contrario regresara "false" */
 resultado = "";
-comparar = `Hola`;
-resultado = cadPrueba.startsWith(`<b>${comparar}</b>`)
-document.write(`<b>startWith: </b> La cadena <b>"${cadPrueba}"</b> ¿empieza con la siguiente linea de caracteres?: <b>"${comparar}"</b>: ${resultado} <br>`);
+comparar = "Hola";
+resultado = cadPrueba.startsWith(comparar)
+document.write(`<b>startWith: </b> La cadena "${cadPrueba}" ¿empieza con los siguientes caracteres?: "${comparar}": <b>${resultado}</b> <br>`);
 
 /**"endsWith" se encarga de comprarar que los ultimos caracteres de una cadea X sea igual a lso ultimos de otra cadena X
     y devuelve "true" si lso caracteres son los mismos  o "false" si no.*/
-comparar = "odo";
+comparar = "dor";
 resultado = cadPrueba.endsWith(comparar);
-document.write(`<b>endWith: </b>¿La cadena "<b>${cadPrueba}</b>" termina con la misma linea de cararteres que la cadena "<b>${comparar}</b>"?: ${resultado} <br>`);
+document.write(`<b>endWith: </b> La cadena "${cadPrueba}" ¿termina con los siguinetes cararteres?: "${comparar}"?: <b>${resultado}</b> <br>`);
 
 /* "includes" comprueba que una cadena se encuentre incluida dentro de otra cadena "X", y si se encuentra incluida
 nos regresa "true" de lo contrario nos devuelve "false"*/
