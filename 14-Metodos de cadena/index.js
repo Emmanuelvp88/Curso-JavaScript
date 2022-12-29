@@ -3,18 +3,18 @@ let cadPrueba = "Hola que onda soy Emmanuel Villalva y sere un gran desarrollado
 let resultado = "";
 
 //"concat" es igial que concatenar con un '+' una cadena a uan variable string ya declarada
-resultado = cadPrueba.concat(" Backend<br>");
+resultado = cadPrueba.concat(" <b>Backend</b><br>");
 document.write(`<b>concat: </b> ${resultado}` );
 
 resultado = cadPrueba + " Backend<br>";//equivalente a usar "concat"
-document.write(resultado);
+document.write(`<b>Equivalente a concat: </b> ${resultado}`);
 
 /*"startWith" Compara que una cadena empiece con los mismos caracteres que otra y regresara
  "true"  de lo contrario regresara "false" */
-cadPrueba = "Probamos el segundo metodo"
-let comparar = "Prob";
-resultado = cadPrueba.startsWith(comparar)
-document.write(`<b>startWith: </b>¿"cadPrueba" empieza con la misma linea de caracteres, que la cadena "comparar"?: ${resultado} <br>`);
+let comparar = "Hola ";
+resultado = "";
+resultado = cadPrueba.startsWith(`<b>${comparar}</b>`)
+document.write(`<b>startWith: </b>¿ La cadena empieza con la misma linea de caracteres, que la cadena "comparar"?: ${resultado} <br>`);
 
 /**"endsWith" se encarga de comprarar que los ultimos caracteres de una cadea X sea igual a lso ultimos de otra cadena X
     y devuelve "true" si lso caracteres son los mismos  o "false" si no.*/
