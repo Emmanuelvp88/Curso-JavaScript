@@ -1,6 +1,7 @@
 //metodo "concat" concatena algo extra a una cadena string ya declarada
-let cadPrueba = "Hola que onda soy Emmanuel Villalva y sere un gran desarrollador";
+let cadPrueba = "Hola que onda soy Emmanuel Villalva sere un gran desarrollador";
 let resultado = "";
+let comparar = "";
 
 //"concat" es igial que concatenar con un '+' una cadena a uan variable string ya declarada
 resultado = cadPrueba.concat(" <b>Backend</b><br>");
@@ -11,10 +12,10 @@ document.write(`<b>Equivalente a concat: </b> ${resultado}`);
 
 /*"startWith" Compara que una cadena empiece con los mismos caracteres que otra y regresara
  "true"  de lo contrario regresara "false" */
-let comparar = "Hola ";
 resultado = "";
+comparar = `Hola`;
 resultado = cadPrueba.startsWith(`<b>${comparar}</b>`)
-document.write(`<b>startWith: </b>¿ La cadena empieza con la misma linea de caracteres, que la cadena "comparar"?: ${resultado} <br>`);
+document.write(`<b>startWith: </b> La cadena <b>"${cadPrueba}"</b> ¿empieza con la siguiente linea de caracteres?: <b>"${comparar}"</b>: ${resultado} <br>`);
 
 /**"endsWith" se encarga de comprarar que los ultimos caracteres de una cadea X sea igual a lso ultimos de otra cadena X
     y devuelve "true" si lso caracteres son los mismos  o "false" si no.*/
