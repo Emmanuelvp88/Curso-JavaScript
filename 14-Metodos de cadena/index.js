@@ -27,4 +27,10 @@ nos regresa "true" de lo contrario nos devuelve "false"*/
 cadPrueba = "Emmanuel sera un programador exitoso"
 comparar = "un"
 resultado = cadPrueba.includes(comparar);
-document.write(`La cadena "<b>${comparar}</b>" se encuentra incluida en la cadena "<b>${cadPrueba}</b>"?: ${resultado}`);
+document.write(`La cadena "<b>${comparar}</b>" se encuentra incluida en la cadena "<b>${cadPrueba}</b>"?: ${resultado}<br>`);
+
+
+/*"indexOf" */
+
+resultado = cadPrueba.indexOf("e");
+document.write(`la palabra  empieza en el caracter numero: ${resultado}`);
