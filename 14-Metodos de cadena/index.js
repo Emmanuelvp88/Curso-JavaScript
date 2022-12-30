@@ -49,5 +49,8 @@ document.write(`<b>padEnd: </b>${resultado}<b>: la cadena tiene 100 caracteres</
 
 /*"repeat" nos repite una cadena las veces que le indiquemos */
 resultado = cadPrueba.repeat(4);
-document.write(`${resultado} <br>`);
+document.write(`<b>repeat: </b>${resultado} <br>`);
 
+/*"substring" le indicamos de que numero hasta que numero de caracter nos musetre de cierta cadena  */
+resultado = cadPrueba.substring(36, 77);
+document.write();
