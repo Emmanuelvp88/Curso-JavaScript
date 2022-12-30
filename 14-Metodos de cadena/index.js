@@ -53,4 +53,4 @@ document.write(`<b>repeat: </b>${resultado} <br>`);
 
 /*"substring" le indicamos de que numero hasta que numero de caracter nos musetre de cierta cadena  */
 resultado = cadPrueba.substring(36, 77);
-document.write();
+document.write(`<b>substring: </b> del caracter 36 al 77 nos dice esto: <b>${resultado}</b>`);
