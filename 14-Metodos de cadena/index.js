@@ -39,6 +39,11 @@ document.write(`<b>indexOf: </b>La cadena que ingresaste empieza en el caracter 
 resultado = cadPrueba.lastIndexOf("gran");
 document.write(`<b>lastIndexOf: </b> La cadena que ingresaste se encuentra en la pocision : "<b>${resultado}</b>" de la cadena "<b>${cadPrueba}</b>" empezando a buscar coincidencias desde lo ultimo<br>`);
 
-/*"padStart" Nos rellena el principio de una cadena con caracteres que le pasemos,para completar el total que le pasemos con los que ya estan en la cadena original*/
-resultado = cadPrueba.padStart(100,"123456789")
-document.write(`${resultado}<b>: la cadena tiene 100 caracteres</b>`);
+/*"padStart" Nos rellena el principio de una cadena con caracteres que le pasemos para completar el total que le pasemos con los que ya estan en la cadena original*/
+resultado = cadPrueba.padStart(100,"123456789 ")
+document.write(`<b>padStart: </b>${resultado}<b>: la cadena tiene 100 caracteres</b><br>`);
+
+/*"padEnd" Nos rellena el final de una cadena con caracteres que le pasemos para completar el total que le pasemos con los que ya estan en la cadena original*/
+resultado = cadPrueba.padEnd(100,"123456789 ")
+document.write(`<b>padEnd: </b>${resultado}<b>: la cadena tiene 100 caracteres</b>`);
+
