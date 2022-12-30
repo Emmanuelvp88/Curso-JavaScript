@@ -45,5 +45,9 @@ document.write(`<b>padStart: </b>${resultado}<b>: la cadena tiene 100 caracteres
 
 /*"padEnd" Nos rellena el final de una cadena con caracteres que le pasemos para completar el total que le pasemos con los que ya estan en la cadena original*/
 resultado = cadPrueba.padEnd(100,"123456789 ")
-document.write(`<b>padEnd: </b>${resultado}<b>: la cadena tiene 100 caracteres</b>`);
+document.write(`<b>padEnd: </b>${resultado}<b>: la cadena tiene 100 caracteres</b><br>`);
+
+/*"repeat" nos repite una cadena las veces que le indiquemos */
+resultado = cadPrueba.repeat(4);
+document.write(`${resultado} <br>`);
 
