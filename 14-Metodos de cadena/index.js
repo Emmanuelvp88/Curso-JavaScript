@@ -1,5 +1,5 @@
 //metodo "concat" concatena algo extra a una cadena string ya declarada
-let cadPrueba = "Hola que onda soy Emmanuel Villalva sere un gran desarrollador";
+let cadPrueba = "Hola que onda soy Emmanuel Villalva sere un gran gran pero gran desarrollador";
 let resultado = "";
 let comparar = "";
 
@@ -15,23 +15,30 @@ document.write(`<b>Equivalente a concat: </b> ${resultado}`);
 resultado = "";
 comparar = "Hola";
 resultado = cadPrueba.startsWith(comparar)
-document.write(`<b>startWith: </b> La cadena "${cadPrueba}" ¿empieza con los siguientes caracteres?: "${comparar}": <b>${resultado}</b> <br>`);
+document.write(`<b>startWith: </b> La cadena "<b>${cadPrueba}</b>" ¿empieza con los siguientes caracteres?: "<b>${comparar}</b>": <b>${resultado}</b> <br>`);
 
 /**"endsWith" se encarga de comprarar que los ultimos caracteres de una cadea X sea igual a lso ultimos de otra cadena X
     y devuelve "true" si lso caracteres son los mismos  o "false" si no.*/
-comparar = "dor";
+comparar = "dorere";
 resultado = cadPrueba.endsWith(comparar);
-document.write(`<b>endWith: </b> La cadena "${cadPrueba}" ¿termina con los siguinetes cararteres?: "${comparar}"?: <b>${resultado}</b> <br>`);
+document.write(`<b>endWith: </b> La cadena "<b>${cadPrueba}</b>" ¿termina con los siguinetes cararteres?: "<b>${comparar}</b>"?: <b>${resultado}</b> <br>`);
 
 /* "includes" comprueba que una cadena se encuentre incluida dentro de otra cadena "X", y si se encuentra incluida
 nos regresa "true" de lo contrario nos devuelve "false"*/
-cadPrueba = "Emmanuel sera un programador exitoso"
-comparar = "un"
+comparar = "gran"
 resultado = cadPrueba.includes(comparar);
-document.write(`<b>includes: </b>La cadena "<b>${comparar}</b>" se encuentra incluida en la cadena "<b>${cadPrueba}</b>"?: ${resultado}<br>`);
+document.write(`<b>includes: </b>La cadena "<b>${comparar}</b>" se encuentra incluida en la cadena "<b>${cadPrueba}</b>"?: <b>${resultado}</b><br>`);
 
 
-/*"indexOf" nos indica el indice de donde empieza alguna cadena de caracteres */
+/*"indexOf" nos indica el indice de donde empieza alguna cadena de caracteres que queramos saber en que possicion se encuentra
+en dado caso que no encuentre la cadena de caracteres arrojara un -1 */
+resultado = cadPrueba.indexOf("soy");
+document.write(`<b>indexOf: </b>La cadena que ingresaste empieza en el caracter numero: ${resultado}<br>`);
 
-resultado = cadPrueba.indexOf("programador");
-document.write(`<b>indexOf: </b>El index empieza en el caracter numero: ${resultado}`);
+/*"lastIndexOf" nos busca una cadena dentro de otra pero empezando desde atras, si la encuentra nos indicara en que posicion la encontro*/
+resultado = cadPrueba.lastIndexOf("gran");
+document.write(`<b>lastIndexOf: </b> La cadena que ingresaste se encuentra en la pocision : "<b>${resultado}</b>" de la cadena "<b>${cadPrueba}</b>" empezando a buscar coincidencias desde lo ultimo<br>`);
+
+/*"padStart" Nos rellena el principio de una cadena con caracteres que le pasemos,para completar el total que le pasemos con los que ya estan en la cadena original*/
+resultado = cadPrueba.padStart(100,"123456789")
+document.write(`${resultado}<b>: la cadena tiene 100 caracteres</b>`);
