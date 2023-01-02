@@ -61,7 +61,10 @@ document.write(`<b>lowerCase:</b> Todas las mayusculas de esta cadena fueraon co
 
 /*"toUpperCase" este metodo nos convierte todas las minusculas a mayusculas de una cadena*/
 resultado = cadPrueba.toUpperCase();
-document.write(`<b>lowerCase:</b> Todas las mayusculas de esta cadena fueraon convertidas a mayusculas: ${resultado} <br>`);
+document.write(`<b>lowerCase:</b> Todas las minsculas de esta cadena fueraon convertidas a mayusculas: ${resultado} <br>`);
 
 /*"toString" este metodo nos cinvierte cualquier tipo de varible, array o cualquier otra cosa a una cadena de texto */
-resultado = cadPrueba
+let cadena = 380
+resultado = cadPrueba.toString(cadena);
+document.write(`<b>toString: </b> ${resultado}`);
+
