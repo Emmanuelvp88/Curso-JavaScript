@@ -84,5 +84,3 @@ cadena = "   Hola que onda  "
 cadena = cadena.trimEnd();
 document.write(`<b>trimEnd: </b> con el metodo trimEnd la cadena de texto tiene  ${cadena.length} caracteres<br>`);
 
-cadena = cadena.valueOf();
-document.write(`<b>trimEnd: </b> con el metodo trimEnd la cadena de texto tiene  ${cadena} caracteres<br>`);
