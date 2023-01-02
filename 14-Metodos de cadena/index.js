@@ -68,3 +68,21 @@ let cadena = 3;
 resultado = cadena.toString() + 2;
 document.write(`<b>toString: </b> ${resultado} <br>`);
 
+/*"trim"se encarga de eliminar los caracteres vacios del principio y del final de cualquier cadenas de texto */
+cadena = "   Hola que onda  "
+document.write(`<b>trim: </b> sin el metodo trim la cadena de texto tiene  ${cadena.length} caracteres<br>`);
+cadena = cadena.trim();
+document.write(`<b>trim: </b> con el metodo trim la cadena de texto tiene  ${cadena.length} caracteres<br>`);
+
+/*"trimStart" se encarga de quitar los espacios vacios del principio de una cadena de texto */
+cadena = "   Hola que onda  "
+cadena = cadena.trimStart();
+document.write(`<b>trimStart: </b> con el metodo trimStart la cadena de texto tiene  ${cadena.length} caracteres<br>`);
+
+/*"trimEnd" se encarga de quitar los espacios vacios del principio de una cadena de texto */
+cadena = "   Hola que onda  "
+cadena = cadena.trimEnd();
+document.write(`<b>trimEnd: </b> con el metodo trimEnd la cadena de texto tiene  ${cadena.length} caracteres<br>`);
+
+cadena = cadena.valueOf();
+document.write(`<b>trimEnd: </b> con el metodo trimEnd la cadena de texto tiene  ${cadena} caracteres<br>`);
