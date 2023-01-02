@@ -53,6 +53,8 @@ document.write(`<b>repeat: </b>${resultado} <br>`);
 
 /*"substring" le indicamos de que numero hasta que numero de caracter nos musetre de cierta cadena  */
 resultado = cadPrueba.substring(36, 77);
-document.write(`<b>substring: </b> del caracter 36 al 77 de la cadena <b>${cadPrueba}</b> nos dice esto: <b>${resultado}</b>`);
+document.write(`<b>substring: </b> del caracter 36 al 77 de la cadena <b>${cadPrueba}</b> nos dice esto: <b>${resultado}</b><br>`);
 
 /*"lowerCase" este metodo convierte toda una cadena en minusculas */
+resultado = cadPrueba.toLowerCase();
+document.write(`<b>lowerCase:</b> Todas las mayusculas de esta cadena fueraon convertidas a minusculas: ${resultado} `);
