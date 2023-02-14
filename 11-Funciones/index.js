@@ -57,5 +57,4 @@ const resta = (num1, num2) => {
     return resultado;
 };
 // Mostramos la funcion dentro del mismo 'document.write()' por ende se muestra lo que retornamos
-document.write(`El resultado de tu resta es: ${resta(10, 4)} <br>`);
-resta(8, 3);
+document.write(`El resultado de tu resta es: ${resta(4, 10)} <br>`);
