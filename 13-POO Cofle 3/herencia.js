@@ -44,12 +44,12 @@ class Celulares {
     }
     //Metodo para mostrar toda la data info
     infoCel() {
-        return document.write(`
+        document.write(`<br>
         color: <b>${this.color}</b><br>
         tamaño: <b>${this.dimencion}</b><br>
-        Resulucion: <b>${this.resolucion}</b> <br>
-        camara:<b>${this.camara}</b> <br>
-        Tien memoria ram de: <b>${this.ram}</b><br><br>
+        Resulucion: <b>${this.resolucion}</b><br>
+        camara:<b>${this.camara}</b><br>
+        Tien memoria ram de: <b>${this.ram}</b><br>
         `);
     }
 }
@@ -69,11 +69,12 @@ celular1.infoCel();
 celular2.infoCel();
 celular3.infoCel();
 
-//Creamos nueva clase "celAltaGama" donde ponemso la palabra "extends" que sirve para heredar la clase "Celulares"
+//Creamos otra clase "celAltaGama" donde con la palabra "extends" heredamos la clase padre "Celulares"
 class celAltaGama extends Celulares {
     constructor(color, dimencion, resolucion, camara, ram, cam) {
-        //La palabra reservada "super" es para mandar a llamar y reutilizar los atributos de la clase "Celulares" 
+//La palabra reservada "super" es para mandar a llamar y reutilizar los atributos de la clase "Celulares" 
         super(color, dimencion, resolucion, camara, ram);
+/**Tambien podemos agragar nuevos atributos a la clase */
         this.camEx = cam;
     }
     // metodo para grabar video
@@ -86,10 +87,7 @@ class celAltaGama extends Celulares {
     }
     //Agregamos otro metodo para mostrar la data, el cual lleva dentro el otro metodo "infoCel"
     infoaltaGama() {
-        return (
-            this.infoCel() +
-            document.write(`Resulucion de camara extra: <b>${this.camEx}</b><br><br>`)
-        );
+        this.infoCel() + document.write(`Resulucion de camara extra: <b>${this.camEx}</b><br><br>`)
     }
 }
 
