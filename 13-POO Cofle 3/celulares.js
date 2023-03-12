@@ -38,6 +38,8 @@ class Celulares {
     brabarVideo() {
         if (this.encendido == true) {
             alert("Grabando video en resolucion: " + this.resolucion);
+        }else{
+            alert(`No puedes grabar video el celular esta apagado..`);
         }
     }
     //Metodo para mostrar toda la data info
@@ -52,18 +54,20 @@ class Celulares {
     }
 }
 /**Creamos tres nuevos objetos y le asignamos todos atributos */
-const celulra1 = new Celulares("negro", "5'", "ful hd", "50mx", "6gb", "23");
-const celulra2 = new Celulares("verde", "5.5'", "hd", "30mx", "2gb");
-const celulra3 = new Celulares("aqua", "4.3'", "ultra hd", "70mx", "6gb");
+const celular1 = new Celulares("negro", "5'", "ful hd", "50mx", "6gb", "23");
+const celular2 = new Celulares("verde", "5.5'", "hd", "30mx", "2gb");
+const celular3 = new Celulares("aqua", "4.3'", "ultra hd", "70mx", "6gb");
+
 //mandamos a llamar todos los metodos para que realice las acciones que queremos
-celulra1.botonEncender();
-celulra1.reiniciar();
-celulra1.brabarVideo();
-celulra1.tomarFoto();
-//LLmamamos los objetos con el metodo para mostrar la data la info
-celulra1.infoCel();
-celulra2.infoCel();
-celulra3.infoCel();
+celular1.botonEncender();
+celular1.reiniciar();
+celular1.brabarVideo();
+celular1.tomarFoto();
+
+//LLmaamamos los objetos con el metodo para mostrar la data la info
+celular1.infoCel();
+celular2.infoCel();
+celular3.infoCel();
 
 //Creamos nueva clase "celAltaGama" donde ponemso la palabra "extends" que sirve para heredar la clase "Celulares"
 class celAltaGama extends Celulares {
@@ -74,11 +78,11 @@ class celAltaGama extends Celulares {
     }
     // metodo para grabar video
     grabandoVideo() {
-        alert("Estas rgabando video");
+        alert("Estas rgabando video: celular de alta ganama");
     }
     // metodo para el reconiciminto facila
     reconocimintoFacial() {
-        alert("Ejecutando reconociminto facial");
+        alert("Ejecutando reconociminto facial: celular alta gama ");
     }
     //Agregamos otro metodo para mostrar la data, el cual lleva dentro el otro metodo "infoCel"
     infoaltaGama() {
