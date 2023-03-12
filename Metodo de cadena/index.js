@@ -11,5 +11,15 @@ const tomarAsistencia = (nombre, p) =>{
     }
 }
 for(i = 0; i < 30; i++){
-    
+    for (alumno in alumnosTotales){
+        tomarAsistencia(alumnosTotales[alumno][0], alumno);
+    }
+}
+
+for(alumno in alumnosTotales){
+    let resultado = `El alumno ${alumnosTotales[alumno][0]} tiene: <br>
+    Asistencias: ${alumnosTotales[alumno][1]}
+    Faltas: ${30 - alumnosTotales[alumno][1]}
+    ` 
+    document.write(resultado);
 }
