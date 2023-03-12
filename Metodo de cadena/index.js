@@ -18,14 +18,14 @@ for(i = 0; i < 30; i++){
 
 for(alumno in alumnosTotales){
     let resultado = `El alumno ${alumnosTotales[alumno][0]} tiene: <br>
-    Asistencias: ${alumnosTotales[alumno][1]}
-    Faltas: ${30 - alumnosTotales[alumno][1]}
+    Asistencias: ${alumnosTotales[alumno][1]}<br>
+    Faltas: ${30 - alumnosTotales[alumno][1]}<br>
     ` 
 
     if(alumnosTotales[alumno][1] > 18){
-        resultado += `Por lo tanto el alumno ${alumnosTotales[alumno][0]} esta <b>Aprobado</b>`
+        resultado += `Por lo tanto el alumno ${alumnosTotales[alumno][0]} esta <b>Aprobado</b> <br>`
     }else{
-        resultado += `Por lo tanto el alumno ${alumnosTotales[alumno][0]} esta <b>Reprobado</b>`
+        resultado += `Por lo tanto el alumno ${alumnosTotales[alumno][0]} esta <b>Reprobado</b> <br>`
     }
     document.write(resultado);
 }
