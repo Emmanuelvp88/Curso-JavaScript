@@ -30,6 +30,8 @@ class Celulares {
     tomarFoto() {
         if (this.encendido == true) {
             alert("La foto se atomado en una resolucion de: " + this.resolucion);
+        }else{
+            alert(`No puede tomar foto el celular esta apagado..`);
         }
     }
     //metodo grabar video
@@ -38,7 +40,7 @@ class Celulares {
             alert("Grabando video en resolucion: " + this.resolucion);
         }
     }
-    //Metodo para mostrar toda la data o la info
+    //Metodo para mostrar toda la data info
     infoCel() {
         return document.write(`
         color: <b>${this.color}</b><br>
