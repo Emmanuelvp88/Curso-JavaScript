@@ -21,5 +21,11 @@ for(alumno in alumnosTotales){
     Asistencias: ${alumnosTotales[alumno][1]}
     Faltas: ${30 - alumnosTotales[alumno][1]}
     ` 
+
+    if(alumnosTotales[alumno][1] > 18){
+        resultado += `Por lo tanto el alumno ${alumnosTotales[alumno][0]} esta <b>Aprobado</b>`
+    }else{
+        resultado += `Por lo tanto el alumno ${alumnosTotales[alumno][0]} esta <b>Reprobado</b>`
+    }
     document.write(resultado);
 }
