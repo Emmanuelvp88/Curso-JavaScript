@@ -69,34 +69,43 @@ let operacion = prompt(`Hola, bienvenido a la calculadora de Emmanuel.
         6.- Porcentaje`);
 var num1 = prompt(`Ingresa tu primer numero`);
 var num2 = prompt(`Ingresa tu segundo nnumero`);
+let resultado = 0;
+/* Parseamos para que los numero obtenidos de los usuarios se trasformen en enteros
+ya que recordemos que en los "prompt" solo se obtienen datos del tipo "String"*/
+num1 = parseInt(num1);
+num2 = parseInt(num2);
 
+
+/**La verdad no habia necesidad de pasarle parametros a las funciones de igula forma 
+ * iva afuncionar por que "num1 y num2" ya estan definidas y parseadas
+ */
 const suma = (num1, num2) => {
-    return (resultado = parseInt(num1) + parseInt(num2));
+    return resultado = num1 + num2;
 };
 const resta = (num1, num2) => {
-    return (resultado = parseInt(num1) - parseInt(num2));
+    return resultado = num1 -  num2
 };
 const multiplicacion = (num1, num2) => {
-    return (resultado = parseInt(num1) * parseInt(num2));
+    return resultado = num1 *  num2
 };
 const divicion = (num1, num2) => {
-    return (resultado = parseInt(num1) / parseInt(num2));
+    return resultado = num1 /  num2
 };
 const resto = (num1, num2) => {
-    return (resultado = parseInt(num1) % parseInt(num2));
+    return resultado = num1 %  num2
 };
 const exponente = (num1, num2) => {
-    return (resultado = parseInt(num1) ** parseInt(num2));
+    return resultado = num1 ** num2;
 };
 
 if (operacion == 1) {
-    alert("el resultado de tu suma es: " + suma(num1, num2));
+    alert(`El resultado de tu suma es: ${suma(num1, num2)}`);
 } else if (operacion == 2) {
     alert(`Èl resultado de tu resta es: ${resta(num1, num2)}`);
 } else if (operacion == 3) {
     alert(`El resutado de tu multiplicacion es: ${multiplicacion(num1, num2)}`);
 } else if (operacion == 4) {
-    alert(`el resultado de tu dicvicion es: ${divicion(num1, num2)}`);
+    alert(`El resultado de tu dicvicion es: ${divicion(num1, num2)}`);
 } else if (operacion == 5) {
     alert(`El resultado de tu resto es: ${resto(num1, num2)}`);
 } else if (operacion == 6) {
