@@ -72,7 +72,7 @@ celular3.infoCel();
 //Creamos nueva clase "celAltaGama" donde ponemso la palabra "extends" que sirve para heredar la clase "Celulares"
 class celAltaGama extends Celulares {
     constructor(color, dimencion, resolucion, camara, ram, cam) {
-        //La palabra reservada "super" es para reciclar los atributos de la clase "Celulares" 
+        //La palabra reservada "super" es para mandar a llamar y reutilizar los atributos de la clase "Celulares" 
         super(color, dimencion, resolucion, camara, ram);
         this.camEx = cam;
     }
