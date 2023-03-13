@@ -15,6 +15,7 @@ class Animal{
     static tamaño(){
         document.write('seleccionando la "clasepadre.elementosatic" podemos acceder al elemento sin necesidad de un objeto <br>');
     }
+    
 }
 /** de esta manera accedemos al elemento con el modificador de acceso "Static" */
 Animal.tamaño();
