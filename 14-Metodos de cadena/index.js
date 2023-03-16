@@ -2,12 +2,11 @@
 let cadPrueba = "Hola que onda soy Emmanuel Villalva sere un gran gran pero gran desarrollador";
 let resultado = "";
 let comparar = "";
-
-//"concat" es igial que concatenar con un '+' una cadena a uan variable string ya declarada
+//"concat" es igial que concatenar con un '+' una cadena a una variable string ya declarada
 resultado = cadPrueba.concat(" <b>Backend</b><br>");
 document.write(`<b>concat: </b> ${resultado}` );
 
-resultado = cadPrueba + " Backend<br>";//equivalente a usar "concat"
+resultado = cadPrueba + "<b> Backend</b><br>";//equivalente a usar "concat"
 document.write(`<b>Equivalente a concat: </b> ${resultado}`);
 
 /*"startWith" Compara que una cadena empiece con los mismos caracteres que otra y regresara
@@ -15,7 +14,7 @@ document.write(`<b>Equivalente a concat: </b> ${resultado}`);
 resultado = "";
 comparar = "Hola";
 resultado = cadPrueba.startsWith(comparar)
-document.write(`<b>startWith: </b> La cadena "<b>${cadPrueba}</b>" ¿empieza con los siguientes caracteres?: "<b>${comparar}</b>": <b>${resultado}</b> <br>`);
+document.write(`<b>startWith: </b> La cadena "<b>${cadPrueba}</b>" ¿empieza con los siguientes caracteres?: "${comparar}": <b>${resultado}</b> <br>`);
 
 /**"endsWith" se encarga de comprarar que los ultimos caracteres de una cadea X sea igual a lso ultimos de otra cadena X
     y devuelve "true" si lso caracteres son los mismos  o "false" si no.*/
