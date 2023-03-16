@@ -10,14 +10,15 @@ class Animal{
     info(){
         document.write(`El ${this.tipo} es de color ${this.color}  tiene ${this.edad} y es de la raza ${this.raza} <br>`);
     }
-/**El modificador de acceso "static" es para que podamos acceder al elemento que lo tenga
- * sin necedidad de haber creado un objeto para poder acceder a el*/
+/**El modificador de acceso "static" sirve para que podamos acceder a un elemento
+ * sin la necedidad de haber creado un objeto para poder acceder a el*/
     static tamaño(){
         document.write('seleccionando la "clasepadre.elementosatic" podemos acceder al elemento sin necesidad de un objeto <br>');
     }
     
 }
-/** de esta manera accedemos al elemento con el modificador de acceso "Static" */
+/**De esta manera accedemos al elemento con el modificador de acceso "Static" directamente con el nombre de la clase
+ * sin la necesidad de crear un objeto*/
 Animal.tamaño();
 
 /**Objetos creados */
