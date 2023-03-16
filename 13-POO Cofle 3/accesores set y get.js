@@ -5,22 +5,20 @@ class Auto{
         this.velocidades = velocidades;
         this.motor = motor;
     }
-        mostrar(){
-            document.write(`<br>El auto de marca ${this.marca} es de color ${this.color}`);
-        }
-        set setColor(newColor){
-            this.color = newColor;
-        }
-
-
-        acelerar(){
-
-        }
+    
+    
+    mostrarInfo(){
+        document.write(`El auto color ${this.color} de marca ${this.marca} tiene ${this.velocidades} con un motor ${this.motor} <br>`);
+    }
+    set setColor(newColor){
+        this.color = newColor;
+    }
 
 }
 
 const ferrari = new Auto("rojo","ferrrari","6v","6.0");
-document.write(ferrari.color);
-
+// Antes del "setter" mostramos la info y el color es rjo ugual como la del parametro
+ferrari.mostrarInfo();
 ferrari.setColor = "verde";
-ferrari.mostrar();
+// Despues del "setter" mostramos nuevamente la info y el valos del color cambio a verde 
+ferrari.mostrarInfo();
