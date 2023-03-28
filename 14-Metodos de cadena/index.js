@@ -22,7 +22,7 @@ comparar = "dorere";
 resultado = cadPrueba.endsWith(comparar);
 document.write(`<b>endWith: </b> La cadena "<b>${cadPrueba}</b>" ¿termina con los siguinetes cararteres?: "<b>${comparar}</b>"?: <b>${resultado}</b> <br>`);
 
-/* "includes" comprueba que una cadena se encuentre incluida dentro de otra cadena "X", y si se encuentra incluida
+/* "includes" comprueba que una cadena se encuentre incluida dentro de otra cadena X, si se encuentra incluida
 nos regresa "true" de lo contrario nos devuelve "false"*/
 comparar = "gran"
 resultado = cadPrueba.includes(comparar);
@@ -32,7 +32,7 @@ document.write(`<b>includes: </b>La cadena "<b>${comparar}</b>" se encuentra inc
 /*"indexOf" nos indica el indice de donde empieza alguna cadena de caracteres que queramos saber en que possicion se encuentra
 en dado caso que no encuentre la cadena de caracteres arrojara un -1 */
 resultado = cadPrueba.indexOf("soy");
-document.write(`<b>indexOf: </b>La cadena que ingresaste empieza en el caracter numero: ${resultado}<br>`);
+document.write(`<b>indexOf: </b>La cadena <b>"soy"</b> empieza en el caracter numero <b>${resultado}</b> de la cadena:  ${cadPrueba}<br>`);
 
 /*"lastIndexOf" nos busca una cadena dentro de otra pero empezando desde atras, si la encuentra nos indicara en que posicion la encontro*/
 resultado = cadPrueba.lastIndexOf("gran");
