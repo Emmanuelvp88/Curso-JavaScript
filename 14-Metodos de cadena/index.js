@@ -76,11 +76,12 @@ let cadena = 3;
 resultado = cadena.toString() + 2;
 document.write(`<b>toString: </b> ${resultado} <br>`);
 
-/*"trim"se encarga de eliminar los espacios vacios del principio y del final de cualquier cadenas de texto */
+/*"trim"se encarga de eliminar los espacios vacios solo los del principio y final de cualquier cadenas de texto 
+los espacios entremedio de la cadena quedan intactos y cuentan como un caracter con el metodo "trim"*/
 cadena = "   Hola que onda  "
-document.write(`<b>trim: </b> sin el metodo trim la cadena: ${cadena} de texto tiene  ${cadena.length} caracteres<br>`);
+document.write(`<b>trim: </b> sin el metodo trim la cadena: <b>${cadena}</b> de texto tiene  ${cadena.length} caracteres<br>`);
 cadena = cadena.trim();
-document.write(`<b>trim: </b> con el metodo trim la cadena de texto tiene  ${cadena.length} caracteres<br>`);
+document.write(`<b>trim: </b> con el metodo trim la cadena: <b>${cadena}</b> de texto tiene  ${cadena.length} caracteres<br>`);
 
 /*"trimStart" se encarga de quitar los espacios vacios del principio de una cadena de texto */
 cadena = "   Hola que onda  "
