@@ -59,9 +59,9 @@ document.write(`<b>repeat: </b>${resultado} <br>`);
 resultado = cadPrueba.split(",");
 document.write(`<b>split</b>${resultado[2]} <br>`);
 
-/*"substring" le indicamos de que numero hasta que numero de caracter nos musetre de cierta cadena  */
-resultado = cadPrueba.substring(36, 77);
-document.write(`<b>substring: </b> del caracter 36 al 77 de la cadena <b>${cadPrueba}</b> nos dice esto: <b>${resultado}</b><br>`);
+/*"substring" le indicamos de que numero hasta que numero de caracter queremos que nos musetre de alguna cadena  */
+resultado = cadPrueba.substring(37, 77);
+document.write(`<b>substring: </b>Muestra del caracter 36 al 77 de la cadena: <b>${cadPrueba}</b>. quedaria asi: <b>${resultado}</b><br>`);
 
 /*"ToLowerCase" este metodo convierte toda una cadena en minusculas */
 resultado = cadPrueba.toLowerCase();
@@ -71,14 +71,14 @@ document.write(`<b>ToLowerCase:</b> Todas las mayusculas de esta cadena fueraon 
 resultado = cadPrueba.toUpperCase();
 document.write(`<b>toUpperCase:</b> Todas las minsculas de esta cadena fueraon convertidas a mayusculas: ${resultado} <br>`);
 
-/*"toString" este metodo nos cinvierte cualquier tipo de varible, array o cualquier otra cosa a una cadena de texto */
+/*"toString" este metodo nos convierte cualquier tipo de varible, array o cualquier otra cosa a una cadena de texto */
 let cadena = 3;
 resultado = cadena.toString() + 2;
 document.write(`<b>toString: </b> ${resultado} <br>`);
 
-/*"trim"se encarga de eliminar los caracteres vacios del principio y del final de cualquier cadenas de texto */
+/*"trim"se encarga de eliminar los espacios vacios del principio y del final de cualquier cadenas de texto */
 cadena = "   Hola que onda  "
-document.write(`<b>trim: </b> sin el metodo trim la cadena de texto tiene  ${cadena.length} caracteres<br>`);
+document.write(`<b>trim: </b> sin el metodo trim la cadena: ${cadena} de texto tiene  ${cadena.length} caracteres<br>`);
 cadena = cadena.trim();
 document.write(`<b>trim: </b> con el metodo trim la cadena de texto tiene  ${cadena.length} caracteres<br>`);
 
