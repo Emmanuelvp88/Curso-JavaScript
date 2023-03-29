@@ -1,5 +1,5 @@
 //metodo "concat" concatena algo extra a una cadena string ya declarada
-let cadPrueba = "Hola que onda soy Emmanuel Villalva sere un gran gran pero gran desarrollador";
+let cadPrueba = "Hola, que onda soy Emmanuel Villalva, sere un gran pero gran desarrollador";
 let resultado = "";
 let comparar = "";
 //"concat" es igial que concatenar con un '+' una cadena a una variable string ya declarada
@@ -34,21 +34,25 @@ en dado caso que no encuentre la cadena de caracteres arrojara un -1 */
 resultado = cadPrueba.indexOf("soy");
 document.write(`<b>indexOf: </b>La cadena <b>"soy"</b> empieza en el caracter numero <b>${resultado}</b> de la cadena:  ${cadPrueba}<br>`);
 
-/*"lastIndexOf" nos busca una cadena dentro de otra pero empezando desde atras, si la encuentra nos indicara en que posicion la encontro*/
+/*"lastIndexOf" nos busca una cadena dentro de otra pero empezando desde atras,si encuentra una o varias cadenas iguales nos indicara la primera de atras y nos indicara en que posicion la encontro*/
 resultado = cadPrueba.lastIndexOf("gran");
-document.write(`<b>lastIndexOf: </b> La cadena que ingresaste se encuentra en la pocision : "<b>${resultado}</b>" de la cadena "<b>${cadPrueba}</b>" empezando a buscar coincidencias desde lo ultimo<br>`);
+document.write(`<b>lastIndexOf: </b> La cadena <b>gran</b> se encuentra en la pocision: "<b>${resultado}</b>" de la cadena "<b>${cadPrueba}</b>" empezando a buscar coincidencias desde lo ultimo<br>`);
 
-/*"padStart" Nos rellena el principio de una cadena con caracteres que le pasemos para completar el total que le pasemos con los que ya estan en la cadena original*/
+/*"padStart" Nos rellena el principio de una cadena con caracteres que le pasemos para completar el total con los que ya estan en la cadena original*/
 resultado = cadPrueba.padStart(100,"123456789 ")
 document.write(`<b>padStart: </b>${resultado}<b>: la cadena tiene 100 caracteres</b><br>`);
 
-/*"padEnd" Nos rellena el final de una cadena con caracteres que le pasemos para completar el total que le pasemos con los que ya estan en la cadena original*/
+/*"padEnd" Nos rellena el final de una cadena con caracteres que le pasemos para completar el total con los que ya estan en la cadena original*/
 resultado = cadPrueba.padEnd(100,"123456789 ")
 document.write(`<b>padEnd: </b>${resultado}<b>: la cadena tiene 100 caracteres</b><br>`);
 
 /*"repeat" nos repite una cadena las veces que le indiquemos */
 resultado = cadPrueba.repeat(4);
 document.write(`<b>repeat: </b>${resultado} <br>`);
+
+
+
+/**"split" nos divide la cadena a como le pidamos */
 
 /*"substring" le indicamos de que numero hasta que numero de caracter nos musetre de cierta cadena  */
 resultado = cadPrueba.substring(36, 77);
