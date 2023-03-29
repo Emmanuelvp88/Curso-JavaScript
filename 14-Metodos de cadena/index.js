@@ -52,7 +52,12 @@ document.write(`<b>repeat: </b>${resultado} <br>`);
 
 
 
-/**"split" nos divide la cadena a como le pidamos */
+/**"split" nos divide la cadena a como le pidamos, nos convierte una cadena en un array donde podemos crear 
+ * posiciones divididas por "comas" o "espacios" tambien si ponemos el nombre de sirta palabra que contiene la cadena 
+ * esa palabra la omitira y al mandar a llamar solo existiran las pociones de las demas palabras
+ */
+resultado = cadPrueba.split(",");
+document.write(`<b>split</b>${resultado[2]} <br>`);
 
 /*"substring" le indicamos de que numero hasta que numero de caracter nos musetre de cierta cadena  */
 resultado = cadPrueba.substring(36, 77);
