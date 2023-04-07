@@ -1,15 +1,24 @@
-//Pop
-document.write("<b>pop: </b> quita el ultimo elemento de un array y lo almacena en una variable <br>");
+//METODOS DE UN ARRAY
+                                //TRASFORMADORES
+document.write("<b>pop(): </b> Quita el ultimo elemento de un array y lo devuenve en una variable <br>");
 let array = ["jorge ", " pedro ", " juan"]
 document.write(`Array original: <b>${array}</b> <br>`);
 array.pop();
 document.write(`Array despues del metodo "pop": <b> ${array}</b> <br>`);
 let ultimoElemento = array.pop();
-document.write(`Mostramos el ultimo elemeto del array asignandolo a una variable: <b>${ultimoElemento}</b><br>`);
-document.write(`Mostraremos como quedo lo que sobro del array al final: <b>${array}</b> <br>`)
+document.write(`Mostramos el ultimo elemento: <b>${ultimoElemento}</b><br>`);
+document.write(`Sobrante del Array: <b>${array}</b> <br>`)
 //Recordemos que el metodo "pop" va quitando el ultimo elemento del array como actualmente esta
 //Es por eso que al final de todo el array solo nos quedo con un solo elemento
 
-document.write(`<b>shift: </b> El lo mismo que "pop" solo que hace lo mismo pero con el elemento del principio.<br>`);
-document.write(`<b>push: </b> Este se encarga de agregra un elemento al array al final.<br> `);
-document.write(array);
+document.write(`<b>shift(): </b> Igual que "pop" solo que con el elemento del principio.<br>`);
+array.push(" emmanuel", " carlos");
+document.write(`<b>push(): </b> Agregra un elemento al array al final de la lista: <b>${array}</b> <br> `);
+document.write(`<b>reverse(): </b> invierte el orden de los elementos de un array: <b>${array.reverse()}</b> <br> `);
+array.unshift("pablo", "emiliano")
+document.write(`<b>unshift(): </b> Agraga uno o mas elementos al principio de un array y devuelve la nueva longitud del array. <b>${array}</b><br>`);
+document.write(`<b>sort(): </b> Ordenas los elementos de un array localmente y los devuelve ya ordenados en el alfabeto lexicografico: <b>${array.sort()}</b><br>`);
+//Los primeros dos parametros que le pasamos a "splice()" sirven para mandarle aquitar elementos y los demas para agregar 
+array.splice(0, 2, "Suerte", "para", 3)
+document.write(`<b>splice(): </b> Cambia el contenido de un array eliminando elementos y/o agregando nuevos. <b>: ${array}</b><br>`);
+//ACCESORES
