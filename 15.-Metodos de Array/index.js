@@ -37,8 +37,9 @@ document.write(`<b>filter(): </b> Crea un array con cada elemento que cuampla la
 document.write(` Ahora mostramos el array si el numero de elemntos es mayor ala condicion.<b>${resultado2}</b><br>`);
 
 //forEach() solo nos permite recorer el contenido de un array
-resultado = array.forEach(numeros => array.length > 9);
-document.write(`<b>forEach(): </b> solo nos permite recorer un bucle normalmente mediante una funcion. <b>${resultado}</b><br>`);
+document.write(`<b>forEach(): </b> solo nos permite recorer un array como un bucle normal mediante una funcion.`);
+array.forEach(numero => {document.write(`<b> ${numero}</b>`)});
+
 
 
 
