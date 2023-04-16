@@ -32,9 +32,8 @@ document.write(`<b>lastIndexOf(): </b> Nos devuelve la posicion en la que se enc
             // DE REPETICION
 //Filter() es un bucle que recore un array y que puede usar condiciones como un bucle noermal
 let resultado = array.filter(numero => numero.length > 5)// devuelve los elementos del array que tengan menos de 5 caracteres contando espacios 
-let resultado2 = array.filter(numero => array.length > 4);      
-document.write(`<b>filter(): </b> Crea un array con cada elemento que cuampla la condicion que le indiquemos. <b>${resultado}</b><br>`);
-document.write(` Ahora mostramos el array si el numero de elemntos es mayor ala condicion.<b>${resultado2}</b><br>`);
+document.write(`<b>filter(): </b> Crea un nuevo array y muestra solo el elemento que cuampla con la condicion que se le ponga. mostrar elementos que contengan mas de 5 caracteres.<b>${resultado} </b><br>`);
+// document.write(` Vamos a mostramos el nuevo array con los elementos que tengas mas de 5 caracteres<br>`);
 
 //forEach() solo nos permite recorer el contenido de un array
 document.write(`<b>forEach(): </b> solo nos permite recorer un array como un bucle normal mediante una funcion.`);
