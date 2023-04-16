@@ -30,11 +30,11 @@ document.write(`<b>indexOf(): </b> Nos devuelve la posicion en la que se encuent
 document.write(`<b>lastIndexOf(): </b> Nos devuelve la posicion en la que se encuentra cieto elemento dentro del array pero empezando de atras hacia delante.<br>`);
 
             // DE REPETICION
-//Filter() es un bucle que recore un array y que puede usar condiciones como un bucle noermal
+//Filter() Recorre un array y crea un nuevo array  con los elementos que cumplan la condicion
 let resultado = array.filter(numero => numero.length > 5)// devuelve los elementos del array que tengan menos de 5 caracteres contando espacios 
 document.write(`<b>filter(): </b> Crea un nuevo array y muestra solo el elemento que cuampla con la condicion que se le ponga. mostrar elementos que contengan mas de 5 caracteres.<b>${resultado} </b><br>`);
-// document.write(` Vamos a mostramos el nuevo array con los elementos que tengas mas de 5 caracteres<br>`);
-
+let resultado2 = array.filter(numeros => array.length > 5);
+document.write(`Tambien podemos mostramos el array solo con la condicion si tiene mas de 5 elementos dentro. <b>${resultado2}</b>. en Efeco tiene 6 elementos <br>`);
 //forEach() solo nos permite recorer el contenido de un array
 document.write(`<b>forEach(): </b> solo nos permite recorer un array como un bucle normal mediante una funcion.`);
 array.forEach(numero => {document.write(`<b> ${numero}</b>`)});
