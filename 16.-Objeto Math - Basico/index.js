@@ -15,3 +15,7 @@ document.write(`<b>Math.SQRT1_2:</b> Asigna la raiz cuadara de un medio a una va
 document.write(`<b>Math.SQR2: </b> Asigna la raiz cuadrada de 2 a una variable ${resultado = Math.SQRT2}<br>`);
 // Constantes y Logaritmos
 document.write(`<b>Math.E: Constante de Euler, La base de los logaritmos naturales ${resultado = Math.E}</b> <br>`);
+document.write(`<b>Math.LN2 Logaritmo natural de 2: ${resulatado = Math.LN2}</b><br>`);
+document.write(`<b>Math.</b><br>`);
+document.write(`<b>Math.</b><br>`);
+document.write(`<b>Math.</b><br>`);
