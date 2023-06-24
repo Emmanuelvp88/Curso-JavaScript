@@ -8,5 +8,4 @@ document.write(`<b>Matah.random:</b> Da un numero aleatoria del entre el 0 y 1. 
 document.write(`<b>Math.round:</b> Redondea el numero decimal a el numero mas cercano ya sea para arriba o para abajo. Ejemplo 3.56767 = ${resultado = Math.round(3.567856)}<br>`);
 document.write(`<b>Math.floor:</b>Redondea los numeros decimales hacia abajo. Ejemplo: 3.98889 = ${resultado = Math.floor(3.9988)} <br>`)
 document.write(`<b>Math.fround:</b>Devuelve la representacion flotante de precision simple mas cercana de un numero. en pocas palabras Redondea los decimales de un una cifra o variable con decimales. Ejemplo: 3.6056999999999 = ${resultado = Math.fround(3.605699999999999999)}<br>`);
-document.write(`<b>Math.trunc:</b> Redondea la cifra eliminando los decimales. Ejmeplo: 4.987867 = ${resultado = Math.trunc(4.987687)}`);
-document.write('oida')
+document.write(`<b>Math.trunc:</b>Elimina los decimales. Ejmeplo: 4.987867 = ${resultado = Math.trunc(4.987687)}`);
