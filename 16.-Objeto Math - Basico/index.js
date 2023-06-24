@@ -14,8 +14,8 @@ document.write(`<b>Math.PI:</b> Asigna el valor de "PI" a una variable  ${result
 document.write(`<b>Math.SQRT1_2:</b> Asigna la raiz cuadara de un medio a una variable ${resultado = Math.SQRT1_2}<br>`);
 document.write(`<b>Math.SQR2: </b> Asigna la raiz cuadrada de 2 a una variable ${resultado = Math.SQRT2}<br>`);
 // Constantes y Logaritmos
-document.write(`<b>Math.E: Constante de Euler, La base de los logaritmos naturales ${resultado = Math.E}</b> <br>`);
-document.write(`<b>Math.LN2 Logaritmo natural de 2: ${resulatado = Math.LN2}</b><br>`);
-document.write(`<b>Math.</b><br>`);
-document.write(`<b>Math.</b><br>`);
-document.write(`<b>Math.</b><br>`);
+document.write(`<b>Math.E:</b> Constante de Euler, La base de los logaritmos naturales ${resultado = Math.E} <br>`);
+document.write(`<b>Math.LN2:</b> Logaritmo natural de 2: ${resulatado = Math.LN2}<br>`);
+document.write(`<b>Math.LN10:</b> Lagoritmo natural de 10 ${resultado = Math.LN10} <br>`);
+document.write(`<b>Math.LOG2E: </b> Lagoritmo de 10 con base 2 ${resultado = Math.LOG2E}<br>`);
+document.write(`<b>Math.LOG10E: </b> ogaritmo de E con base 10 ${resultado = Math.LOG10E}<br>`);
