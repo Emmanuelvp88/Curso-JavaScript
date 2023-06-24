@@ -9,5 +9,9 @@ document.write(`<b>Math.round:</b> Redondea el numero decimal a el numero mas ce
 document.write(`<b>Math.floor:</b> Redondea los numeros decimales hacia abajo. Ejemplo: 3.98889 = ${resultado = Math.floor(3.9988)} <br>`)
 document.write(`<b>Math.fround:</b> Devuelve la representacion flotante de precision simple mas cercana de un numero. en pocas palabras Redondea los decimales de un una cifra o variable con decimales. Ejemplo: 3.6056999999999 = ${resultado = Math.fround(3.605699999999999999)}<br>`);
 document.write(`<b>Math.trunc:</b> Elimina los decimales. Ejmeplo: 4.987867 = ${resultado = Math.trunc(4.987687)}<br>`);
+// PROPIEDADES
 document.write(`<b>Math.PI:</b> Asigna el valor de "PI" a una variable  ${resultado = Math.PI }<br>`);
 document.write(`<b>Math.SQRT1_2:</b> Asigna la raiz cuadara de un medio a una variable ${resultado = Math.SQRT1_2}<br>`);
+document.write(`<b>Math.SQR2: </b> Asigna la raiz cuadrada de 2 a una variable ${resultado = Math.SQRT2}<br>`);
+// Constantes y Logaritmos
+document.write(`<b>Math.E: Constante de Euler, La base de los logaritmos naturales ${resultado = Math.E}</b> <br>`);
