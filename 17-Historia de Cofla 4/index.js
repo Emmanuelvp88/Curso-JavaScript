@@ -31,3 +31,9 @@ else if(operacion == 2){
 else if (operacion == 3){
     alert(`El resultado de tu multiplicacion es: ${multiplicacion(num1, num2)}`);
 }
+else if (operacion == 4){
+    alert(`El resultado de tu divicion es: ${divicion(num1, num2)}`);
+}
+else{
+    alert(`Operacion no valida.`);
+}
