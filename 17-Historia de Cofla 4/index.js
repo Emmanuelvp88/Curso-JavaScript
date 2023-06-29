@@ -28,3 +28,6 @@ if (operacion == 1){
 else if(operacion == 2){
     alert(`El resultado de tu resta es: ${resta(num1, num2)}`)
 }
+else if (operacion == 3){
+    alert(`El resultado de tu multiplicacion es: ${multiplicacion(num1, num2)}`);
+}
