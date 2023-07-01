@@ -37,16 +37,16 @@
 
 const obtenerInfo = (materia)=>{
     materias = {
-        'fisica':[emmanuel, josa, brian, angeles, emi],
-        'quimica': [Emmauel, jael]
-
+        'fisica':['emmanuel', 'josa', 'brian', 'angeles', 'emi'],
+        'quimica': ['mmauel', 'jael']
+        
+    }
+    if(materias[materia]){
+        return materias[materia]
+    }else{
+    
     }
 }
 
-if(materias[materia] !== undefined){
-
-}else{
-
-}
-let info = obtenerInfo('fisica')
+let info = obtenerInfo('quimica')
 document.write(info)
