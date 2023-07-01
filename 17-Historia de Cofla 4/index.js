@@ -41,12 +41,16 @@ const obtenerInfo = (materia)=>{
         'quimica': ['mmauel', 'jael']
         
     }
-    if(materias[materia]){
-        return materias[materia]
+    if(materias[materia] !== undefined){
+        return [materias[materia], materia]
     }else{
-    
+        return false;
     }
 }
 
 let info = obtenerInfo('quimica')
-document.write(info)
+if (info !== false){
+    document.write(info)
+}else{
+
+}
