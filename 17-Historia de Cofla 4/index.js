@@ -1,5 +1,5 @@
-// let operacion = prompt(`Que operacion deseas realizar: 
-//                         1.- Suma 
+// let operacion = prompt(`Que operacion deseas realizar:
+//                         1.- Suma
 //                         2.- Resta
 //                         3.- Multiplicacion
 //                         4.- Division`);
@@ -34,24 +34,29 @@
 //     alert(`Operacion no valida.`);
 // }
 
-
-const obtenerInfo = (materia)=>{
+const obtenerInfo = (materia) => {
     materias = {
-        fisica:['Emmanuel', 'Juan', 'Pedro', 'Raquel', 'Luis'],
-        quimica: ['Emmauel','Luis', 'Emmi'], 
-        Programacion: ['Josa', 'Pedro', 'Juan']
-        
-    }
-    if(materias[materia] !== undefined){
-        return [materias[materia], materia]
-    }else{
+        fisica: ["Perez", "Emmanuel", "Juan", "Pedro", "Raquel", "Luis"],
+        quimica: ["Vilallva", "Emmauel", "Luis", "Emmi"],
+        Programacion: ["Rodriguez", "Josa", "Pedro", "Juan"],
+    };
+    if (materias[materia] !== undefined) {
+        return [materias[materia], materia];
+    } else {
         return false;
     }
-}
+};
 
-let info = obtenerInfo('fisica')
-if (info !== false){
-    document.write(`Alumnos presentes en  <b style = 'color: blue'>${info[1]}: </b> <i style = 'color: red'>${info[0]}</i>`)
-}else{
-
-}
+const mostrarInfo = (materia) => {
+    let info = obtenerInfo(materia);
+    if (info !== false) {
+        let profesor = info[0].shift();
+        let alumnos = info[0];
+        let materia = info[1];
+        document.write(
+            ` El profesor  de <b style = 'color: yellow'>${materia}</b> es:<b>${profesor}</b><br>
+            Los alumnos presentes en clase son: <b style = 'color: blue'>${alumnos}</b>`
+        );
+    }
+};
+mostrarInfo("fisica");
