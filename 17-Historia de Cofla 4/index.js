@@ -36,9 +36,10 @@
 
 const obtenerInfo = (materia) => {
     materias = {
-        fisica: ["Perez", "Emmanuel", "Juan", "Pedro", "Raquel", "Luis"],
-        quimica: ["Vilallva", "Emmauel", "Luis", "Emmi"],
-        Programacion: ["Rodriguez", "Josa", "Pedro", "Juan"],
+        fisica: ["Perez", "Emmanuel", "Juan", "Pedro", "Raquel", "Cofla"],
+        quimica: ["Vilallva", "Abelardo", "Luis", "Emmi"],
+        programacion: ["Rodriguez", "Cofla", "Pedro", "Juan"],
+        algebra: ['Ramirez', 'juan', 'Raul', 'Abelardo']
     };
     if (materias[materia] !== undefined) {
         return [materias[materia], materia];
@@ -46,17 +47,21 @@ const obtenerInfo = (materia) => {
         return false;
     }
 };
-
+// Funcion para mostrar la info
 const mostrarInfo = (materia) => {
+    // variable donde asinamos la primer funcion que retorna un array
     let info = obtenerInfo(materia);
     if (info !== false) {
         let profesor = info[0].shift();
         let alumnos = info[0];
         let materia = info[1];
         document.write(
-            ` El profesor  de <b style = 'color: yellow'>${materia}</b> es:<b>${profesor}</b><br>
-            Los alumnos presentes en clase son: <b style = 'color: blue'>${alumnos}</b>`
+            ` El profesor  de <b style = 'color: yellow'>${materia}</b> es:<b style = 'color: green '>${profesor}</b><br>
+            Los alumnos presentes en clase son: <b style = 'color: blue'>${alumnos}</b><br><br>`
         );
     }
 };
-mostrarInfo("fisica");
+mostrarInfo('fisica');
+mostrarInfo("quimica");
+mostrarInfo('programacion');
+mostrarInfo('algebra');
