@@ -37,8 +37,9 @@
 
 const obtenerInfo = (materia)=>{
     materias = {
-        'fisica':['emmanuel', 'josa', 'brian', 'angeles', 'emi'],
-        'quimica': ['mmauel', 'jael']
+        fisica:['Emmanuel', 'Juan', 'Pedro', 'Raquel', 'Luis'],
+        quimica: ['Emmauel','Luis', 'Emmi'], 
+        Programacion: ['Josa', 'Pedro', 'Juan']
         
     }
     if(materias[materia] !== undefined){
@@ -48,9 +49,9 @@ const obtenerInfo = (materia)=>{
     }
 }
 
-let info = obtenerInfo('quimica')
+let info = obtenerInfo('fisica')
 if (info !== false){
-    document.write(info)
+    document.write(`Alumnos presentes en  <b style = 'color: blue'>${info[1]}: </b> <i style = 'color: red'>${info[0]}</i>`)
 }else{
 
 }
