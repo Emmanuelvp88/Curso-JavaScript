@@ -39,8 +39,9 @@ const obtenerInfo = (materia) => {
         fisica: ["Perez", "Emmanuel", "Juan", "Pedro", "Raquel", "Cofla"],
         quimica: ["Vilallva", "Abelardo", "Luis", "Emmi"],
         programacion: ["Rodriguez", "Cofla", "Pedro", "Juan"],
-        algebra: ['Ramirez', 'juan', 'Raul', 'Abelardo']
+        algebra: ["Ramirez", "juan", "Raul", "Abelardo"],
     };
+    // Validacion para que el array no este vacio 
     if (materias[materia] !== undefined) {
         return [materias[materia], materia];
     } else {
@@ -51,6 +52,7 @@ const obtenerInfo = (materia) => {
 const mostrarInfo = (materia) => {
     // variable donde asinamos la primer funcion que retorna un array
     let info = obtenerInfo(materia);
+
     if (info !== false) {
         let profesor = info[0].shift();
         let alumnos = info[0];
@@ -63,5 +65,5 @@ const mostrarInfo = (materia) => {
 };
 mostrarInfo('fisica');
 mostrarInfo("quimica");
-mostrarInfo('programacion');
-mostrarInfo('algebra');
+mostrarInfo("programacion");
+mostrarInfo("algebra");
