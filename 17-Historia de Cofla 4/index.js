@@ -63,6 +63,7 @@ const mostrarInfo = (materia) => {
         );
     }
 };
+
 mostrarInfo('fisica');
 mostrarInfo("quimica");
 mostrarInfo("programacion");
