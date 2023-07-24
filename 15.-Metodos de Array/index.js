@@ -28,8 +28,8 @@ document.write(`<b>join(): </b>Une los elementos de un array, y entremedio de ca
 document.write(`<b>slice(): </b>Devuelve una parte del array dentro de un nuevo array desde donde le indiquemos por ejemplo del [2,5]:  <b> ${array.slice(2, 5)}</b> <br>`);
 // document.write(array)
 document.write(`<b>includes(): </b> Nos indica si esta incluido cierto elemento dentro del array y nos devuelve "true" o "false". <b>${array.includes("pablo")}</b><br>`);
-document.write(`<b>indexOf(): </b> Nos devuelve la posicion en la que se encuentra el elemento. <b>${array.indexOf('lazaro')}</b><br>`);
-document.write(`<b>lastIndexOf(): </b> Nos devuelve la posicion en la que se encuentra cieto elemento dentro del array pero empezando de atras hacia delante.<br>`);
+document.write(`<b>indexOf(): </b> Nos devuelve la posicion en la que se encuentra cierto elemneto que le indiquemos. <b>${array.indexOf('lazaro')}</b><br>`);
+document.write(`<b>lastIndexOf(): </b> es lo mismo que "indexOf" nos devuelve el numero de posicion de cierto elemento pero empezando de atras hacia delante: ${array.lastIndexOf('lazaro')}<br><br><br>`);
 
             // DE REPETICION
 //Filter() Recorre un array y crea un nuevo array  con los elementos que cumplan la condicion
