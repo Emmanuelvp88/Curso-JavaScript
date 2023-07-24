@@ -3,10 +3,9 @@
 document.write("<b>pop(): </b> Quita el ultimo elemento de un array y lo devuenve en una variable <br>");
 let array = [" jorge ", " pedro ", " juan "]
 document.write(`Array original: <b>${array}</b> <br>`);
-array.pop();
-document.write(`Array despues del metodo "pop": <b> ${array}</b> <br>`);
+document.write(`Devolviendo el ultimo elemento del array con "pop": <b> ${array.pop()}</b> <br>`);
 let ultimoElemento = array.pop();
-document.write(`Mostramos el ultimo elemento: <b>${ultimoElemento}</b><br>`);
+document.write(`Mostramos el ultimo elemento con "pop": <b>${array}</b><br>`);
 document.write(`Sobrante del Array: <b>${array}</b> <br>`)
 //Recordemos que el metodo "pop" va quitando el ultimo elemento del array como actualmente esta
 //Es por eso que al final de todo el array solo nos quedo con un solo elemento
