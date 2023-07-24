@@ -1,6 +1,6 @@
 //METODOS DE UN ARRAY
                                 //METODOS TRASFORMADORES
-let array = [" jorge ", " pedro ", " juan "]
+let array = ["jorge", "pedro", "juan"]
 document.write(`Array original: <b>${array}</b> <br><br>`);
 
 document.write("<b>pop(): </b> Quita el ultimo elemento de un array y lo devuenve en una variable <br>");
@@ -24,10 +24,11 @@ document.write(`<b>splice(): </b> Cambia el contenido de un array eliminando ele
 document.write('indicamos que eliminara los elementos del 0 al 2  y agregara otros 3 elemetos<br><br>');
 
                                 //METODOS ACCESORES
-document.write(`<b>join(): </b>Une los elementos de un array, y entremedio de cada elemento ponemos cualquier caracter que le indiquemos y lo devuelve como una sola cadena de texto.<b>${array.join(" - ")}</b><br>`);
-document.write(`<b>slice(): </b>Devuelve una parte del array dentro de un nuevo array empezando desde el inicio. <b> ${array.slice(0,-1)}</b> <br>`);
+document.write(`<b>join(): </b>Une los elementos de un array, y entremedio de cada elemento ponemos cualquier caracter que le indiquemos y lo devuelve como una sola cadena de texto: <b>${array.join("---")}</b><br><br>`);
+document.write(`<b>slice(): </b>Devuelve una parte del array dentro de un nuevo array desde donde le indiquemos por ejemplo del [2,5]:  <b> ${array.slice(2, 5)}</b> <br>`);
+// document.write(array)
 document.write(`<b>includes(): </b> Nos indica si esta incluido cierto elemento dentro del array y nos devuelve "true" o "false". <b>${array.includes("pablo")}</b><br>`);
-document.write(`<b>indexOf(): </b> Nos devuelve la posicion en la que se encuentra el elemento. <b>${array.indexOf(3)}</b><br>`);
+document.write(`<b>indexOf(): </b> Nos devuelve la posicion en la que se encuentra el elemento. <b>${array.indexOf('lazaro')}</b><br>`);
 document.write(`<b>lastIndexOf(): </b> Nos devuelve la posicion en la que se encuentra cieto elemento dentro del array pero empezando de atras hacia delante.<br>`);
 
             // DE REPETICION
