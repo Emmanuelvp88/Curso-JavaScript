@@ -43,11 +43,12 @@ const obtenerInfo = (materia) => {
     };
     // Validacion para que el array no este vacio
     if (materias[materia] !== undefined) {
-        return [materias[materia], materia];
+        return [materias[materia], materia, materias];
     } else {
         return false;
     }
 };
+// document.write(obtenerInfo('fisica'));
 // Funcion para mostrar la info
 const mostrarInfo = (materia) => {
     // variable donde asignamos la primer funcion que retorna un array
@@ -62,8 +63,21 @@ const mostrarInfo = (materia) => {
         );
     }
 };
+const cantidadClases = () => {
+    let info = obtenerInfo();
+    let cantidadTotal = 0;
+    for (contador in info) {
+        document.write(info);
+        if (info[contador].includes(alumnos)) {
+            cantidadTotal++;
+        }
+    }
+    return cantidadTotal;
+};
 
-mostrarInfo('fisica');
+document.write(cantidadClases());
+
+mostrarInfo("fisica");
 mostrarInfo("quimica");
-mostrarInfo("programacion");  
+mostrarInfo("programacion");
 mostrarInfo("algebra");
