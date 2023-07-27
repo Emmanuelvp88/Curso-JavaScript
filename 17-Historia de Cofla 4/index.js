@@ -36,19 +36,18 @@
 
 const obtenerInfo = (materia) => {
     materias = {
-        fisica: ["Perez", "Emmanuel", "Juan", "Pedro", "Raquel", "Cofla"],
-        quimica: ["Vilallva", "Abelardo", "Luis", "Emmi"],
+        fisica: ["Perez", "Emmanuel", "Juan", "Pedro", "Cofla"],
+        quimica: ["Villalva", "Abelardo", "Luis", "Cofla"],
         programacion: ["Rodriguez", "Cofla", "Pedro", "Juan"],
-        algebra: ["Ramirez", "juan", "Raul", "Abelardo"],
+        algebra: ["Ramirez", "Juan", "Pedro", "Abelardo"],
     };
     // Validacion para que el array no este vacio
     if (materias[materia] !== undefined) {
         return [materias[materia], materia, materias];
     } else {
-        return false;
+        return materias;
     }
 };
-// document.write(obtenerInfo('fisica'));
 // Funcion para mostrar la info
 const mostrarInfo = (materia) => {
     // variable donde asignamos la primer funcion que retorna un array
@@ -63,21 +62,25 @@ const mostrarInfo = (materia) => {
         );
     }
 };
-const cantidadClases = () => {
+
+
+const cantidadClases = (alumno) => {
     let info = obtenerInfo();
-    let cantidadTotal = 0;
-    for (contador in info) {
-        document.write(info);
-        if (info[contador].includes(alumnos)) {
-            cantidadTotal++;
+    // document.write(info);
+    let contador = 0;
+    
+    for (iterador in info) {
+        if (info[iterador].includes(alumno)) {
+            contador++;
         }
     }
-    return cantidadTotal;
+    return contador;
 };
 
-document.write(cantidadClases());
 
 mostrarInfo("fisica");
 mostrarInfo("quimica");
 mostrarInfo("programacion");
 mostrarInfo("algebra");
+
+document.write(cantidadClases('Abelardo'));
