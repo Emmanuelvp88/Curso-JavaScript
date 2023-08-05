@@ -66,7 +66,6 @@ const mostrarInfo = (materia) => {
 
 const cantidadClases = (alumno) => {
     let info = obtenerInfo();
-    // document.write(info);
     let contador = 0;
     
     for (iterador in info) {
@@ -74,7 +73,7 @@ const cantidadClases = (alumno) => {
             contador++;
         }
     }
-    return contador;
+    return ` El alumno: <b style = 'color: blue'>${alumno} </b> asistio ${contador} veces `;
 };
 
 
