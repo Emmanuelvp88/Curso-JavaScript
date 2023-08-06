@@ -67,13 +67,12 @@ const mostrarInfo = (materia) => {
 const cantidadClases = (alumno) => {
     let info = obtenerInfo();
     let contador = 0;
-    
     for (iterador in info) {
         if (info[iterador].includes(alumno)) {
             contador++;
         }
     }
-    return ` El alumno: <b style = 'color: blue'>${alumno} </b> asistio ${contador} veces `;
+    return ` El alumno: <b style = 'color: blue'>${alumno} </b> esta en  ${contador} cleses `;
 };
 
 
@@ -82,4 +81,4 @@ mostrarInfo("quimica");
 mostrarInfo("programacion");
 mostrarInfo("algebra");
 
-document.write(cantidadClases('Abelardo'));
+document.write(cantidadClases('Juan'));
