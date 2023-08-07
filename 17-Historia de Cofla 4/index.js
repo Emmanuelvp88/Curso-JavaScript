@@ -63,7 +63,7 @@ const mostrarInfo = (materia) => {
     }
 };
 
-
+// Funcion para mostrar nombre del alumno y a cuantas clases a asistido 
 const cantidadClases = (alumno) => {
     let info = obtenerInfo();
     let contador = 0;
