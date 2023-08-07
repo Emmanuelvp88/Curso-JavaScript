@@ -59,7 +59,7 @@ const mostrarInfo = (materia) => {
         document.write(
             ` El profesor  de <b style = 'color: yellow'>${materia}</b> es:<b style = 'color: green '>${profesor}</b><br>
             Los alumnos presentes en clase son: <b style = 'color: blue'>${alumnos}</b><br><br>`
-        );
+            );
     }
 };
 
@@ -69,6 +69,7 @@ const cantidadClases = (alumno) => {
     let contador = 0;
     for (iterador in info) {
         if (info[iterador].includes(alumno)) {
+            document.write(iterador)
             contador++;
         }
     }
