@@ -34,6 +34,7 @@
 //     alert(`Operacion no valida.`);
 // }
 
+// Funcion para obtener toda la informacion
 const obtenerInfo = (materia) => {
     materias = {
         fisica: ["Perez", "Emmanuel", "Juan", "Pedro", "Cofla"],
@@ -48,6 +49,7 @@ const obtenerInfo = (materia) => {
         return materias;
     }
 };
+
 // Funcion para mostrar la info
 const mostrarInfo = (materia) => {
     // variable donde asignamos la primer funcion que retorna un array
@@ -59,27 +61,26 @@ const mostrarInfo = (materia) => {
         document.write(
             ` El profesor  de <b style = 'color: yellow'>${materia}</b> es:<b style = 'color: green '>${profesor}</b><br>
             Los alumnos presentes en clase son: <b style = 'color: blue'>${alumnos}</b><br><br>`
-            );
+        );
     }
 };
 
-// Funcion para mostrar nombre del alumno y a cuantas clases a asistido 
+// Funcion para mostrar nombre del alumno y a cuantas clases a asistido
 const cantidadClases = (alumno) => {
+    // Cuando otenerInfo es undefinided retorna materias
     let info = obtenerInfo();
     let contador = 0;
     for (iterador in info) {
         if (info[iterador].includes(alumno)) {
-            document.write(iterador)
             contador++;
         }
     }
     return ` El alumno: <b style = 'color: blue'>${alumno} </b> esta en  ${contador} cleses `;
 };
 
-
 mostrarInfo("fisica");
 mostrarInfo("quimica");
 mostrarInfo("programacion");
 mostrarInfo("algebra");
 
-document.write(cantidadClases('Juan'));
+document.write(cantidadClases("Juan"));
