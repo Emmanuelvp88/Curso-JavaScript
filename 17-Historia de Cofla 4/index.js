@@ -69,13 +69,16 @@ const mostrarInfo = (materia) => {
 const cantidadClases = (alumno) => {
     // Cuando otenerInfo es undefinided retorna materias
     let info = obtenerInfo();
+    let clasesPresentes = [];
     let contador = 0;
     for (iterador in info) {
         if (info[iterador].includes(alumno)) {
             contador++;
+            clasesPresentes.push("" + iterador);
         }
     }
-    return ` El alumno: <b style = 'color: blue'>${alumno} </b> esta en  ${contador} cleses `;
+    return ` El alumno <b style = 'color: blue'>${alumno} </b> esta en  ${contador} cleses. 
+    Y son: <b style = 'color: green'>${clasesPresentes}</b>`;
 };
 
 mostrarInfo("fisica");
