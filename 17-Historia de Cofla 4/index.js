@@ -99,8 +99,8 @@ const agregar = (alumno, materia)=>{
     personas = clases[materia];
     personas.shift();
     alumnos = personas;
-    if (clases.length >= 20){
-        document.write();
+    if (alumnos.length >= 2){
+        document.write('Lo sentimos no hay cupo ');
     }
 }
-agregar();
+agregar('pedrito', 'fisica')
