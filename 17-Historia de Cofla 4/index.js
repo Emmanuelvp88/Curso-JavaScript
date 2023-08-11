@@ -87,3 +87,20 @@ mostrarInfo("programacion");
 mostrarInfo("algebra");
 
 document.write(cantidadClases("Juan"));
+
+const clases = {
+    fisica: ["Perez", "Emmanuel", "Juan", "Pedro", "Cofla"],
+    quimica: ["Villalva", "Abelardo", "Luis", "Cofla"],
+    programacion: ["Rodriguez", "Cofla", "Pedro", "Juan"],
+    algebra: ["Ramirez", "Juan", "Pedro", "Abelardo"],
+};
+
+const agregar = (alumno, materia)=>{
+    personas = clases[materia];
+    personas.shift();
+    alumnos = personas;
+    if (clases.length >= 20){
+        document.write();
+    }
+}
+agregar();
