@@ -88,7 +88,7 @@ mostrarInfo("algebra");
 
 document.write(cantidadClases("Juan"));
 
-const clases = {
+let clases = {
     fisica: ["Perez", "Emmanuel", "Juan", "Pedro", "Cofla"],
     quimica: ["Villalva", "Abelardo", "Luis", "Cofla"],
     programacion: ["Rodriguez", "Cofla", "Pedro", "Juan"],
@@ -99,8 +99,9 @@ const agregar = (alumno, materia)=>{
     personas = clases[materia];
     personas.shift();
     alumnos = personas;
+    document.write(alumnos)
     if (alumnos.length >= 2){
-        document.write('Lo sentimos no hay cupo ');
+        document.write(`Lo sentimos no hay ${alumno} cupo `);
     }
 }
-agregar('pedrito', 'fisica')
+agregar('pedrito', 'quimica')
