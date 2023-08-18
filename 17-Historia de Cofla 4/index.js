@@ -78,7 +78,7 @@ const cantidadClases = (alumno) => {
         }
     }
     return ` El alumno <b style = 'color: blue'>${alumno} </b> esta en  ${contador} cleses. 
-    Y son: <b style = 'color: green'>${clasesPresentes}</b>`;
+    Y son: <b style = 'color: green'>${clasesPresentes}</b><br><br>`;
 };
 
 mostrarInfo("fisica");
@@ -95,13 +95,36 @@ let clases = {
     algebra: ["Ramirez", "Juan", "Pedro", "Abelardo"],
 };
 
-const agregar = (alumno, materia)=>{
+const agregar = (alumno, materia) => {
     personas = clases[materia];
     personas.shift();
     alumnos = personas;
-    document.write(alumnos)
-    if (alumnos.length >= 2){
+    if (alumnos.length >= 2) {
         document.write(`Lo sentimos no hay ${alumno} cupo `);
+    } else {
+        alumnos.push(alumno);
+        if (materia == "fisica") {
+            fisica: alumno;
+            quimica: materias["quimica"];
+            programacion: materia["programacion"];
+            algebra: materia["algebra"];
+        } else if (materia == "quimica") {
+            fisica: materias["fisica"];
+            quimica: alumno;
+            programacion: materia["programacion"];
+            algebra: materia["algebra"];
+        } else if (materia == "programacion") {
+            fisica: materias["fisica"];
+            quimica: materia["quimica"];
+            programacion: alumno;
+            algebra: materia["algebra"];
+        } else if (materia == "algebra") {
+            fisica: materias["fisica"];
+            quimica: materia["quimica"];
+            programacion: materia["programacion"];
+            algebra: alumno;
+        }
     }
-}
-agregar('pedrito', 'quimica')
+    document.write(`Felicidaddes ${alumno} te as incrito a ${materia} correctamente¡`);
+};
+agregar("pedrito", "quimica");
