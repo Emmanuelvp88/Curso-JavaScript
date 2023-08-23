@@ -99,32 +99,49 @@ const agregar = (alumno, materia) => {
     personas = clases[materia];
     personas.shift();
     alumnos = personas;
-    if (alumnos.length >= 2) {
-        document.write(`Lo sentimos no hay ${alumno} cupo `);
+    if (alumnos.length >= 10) {
+        document.write(`Lo sentimos no hay cupo ${alumno} `);
     } else {
         alumnos.push(alumno);
         if (materia == "fisica") {
-            fisica: alumno;
+            fisica: alumnos;
             quimica: materias["quimica"];
             programacion: materia["programacion"];
             algebra: materia["algebra"];
         } else if (materia == "quimica") {
             fisica: materias["fisica"];
-            quimica: alumno;
+            quimica: alumnos;
             programacion: materia["programacion"];
             algebra: materia["algebra"];
         } else if (materia == "programacion") {
             fisica: materias["fisica"];
             quimica: materia["quimica"];
-            programacion: alumno;
+            programacion: alumnos;
             algebra: materia["algebra"];
         } else if (materia == "algebra") {
             fisica: materias["fisica"];
             quimica: materia["quimica"];
             programacion: materia["programacion"];
-            algebra: alumno;
+            algebra: alumnos;
         }
+        document.write(`Felicidaddes ${alumno} te as incrito a ${materia} correctamente¡<br>`);
     }
-    document.write(`Felicidaddes ${alumno} te as incrito a ${materia} correctamente¡`);
 };
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
+agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");

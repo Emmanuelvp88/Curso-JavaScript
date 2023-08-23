@@ -19,7 +19,7 @@ const resta = ()=>{
     return resultado = numero1 - numero2;
 }
 const divicion = () =>{
-    return resultado = numero1 /numero2;
+    return resultado = numero1 % numero2;
 }
 const multiplicacion = () =>{
     return resultado = numero1 * numero2;
