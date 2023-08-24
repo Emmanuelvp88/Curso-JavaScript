@@ -99,30 +99,38 @@ const agregar = (alumno, materia) => {
     personas = clases[materia];
     personas.shift();
     alumnos = personas;
-    if (alumnos.length >= 10) {
-        document.write(`Lo sentimos no hay cupo ${alumno} `);
+    if (alumno.length >= 20) {
+        document.write(`Lo sentimos no hay cupo ${alumno} <br>`);
     } else {
         alumnos.push(alumno);
         if (materia == "fisica") {
-            fisica: alumnos;
-            quimica: materias["quimica"];
-            programacion: materia["programacion"];
-            algebra: materia["algebra"];
+            clases = {
+                fisica: alumnos,
+                quimica: (clases = ["quimica"]),
+                programacion: (clases = ["programacion"]),
+                algebra: (clases = ["algebra"]),
+            };
         } else if (materia == "quimica") {
-            fisica: materias["fisica"];
-            quimica: alumnos;
-            programacion: materia["programacion"];
-            algebra: materia["algebra"];
+            clases = {
+                fisica: (clases = ["fisica"]),
+                quimica: alumnos,
+                programacion: (clases = ["programacion"]),
+                algebra: (clases = ["algebra"]),
+            };
         } else if (materia == "programacion") {
-            fisica: materias["fisica"];
-            quimica: materia["quimica"];
-            programacion: alumnos;
-            algebra: materia["algebra"];
+            clases = {
+                fisica: (clases = ["fisica"]),
+                quimica: (clases = ["quimica"]),
+                programacion: alumnos,
+                algebra: (clases = ["algebra"]),
+            };
         } else if (materia == "algebra") {
-            fisica: materias["fisica"];
-            quimica: materia["quimica"];
-            programacion: materia["programacion"];
-            algebra: alumnos;
+            clases = {
+                fisica: (clases = ["fisica"]),
+                quimica: (clases = ["quimica"]),
+                programacion: (clases = ["programacion"]),
+                algebra: alumnos,
+            };
         }
         document.write(`Felicidaddes ${alumno} te as incrito a ${materia} correctamente¡<br>`);
     }
