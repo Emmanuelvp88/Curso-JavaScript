@@ -96,10 +96,8 @@ let clases = {
 };
 
 const agregar = (alumno, materia) => {
-    personas = clases[materia];
-    personas.shift();
-    alumnos = personas;
-    if (alumno.length >= 20) {
+    alumnos = clases[materia];
+    if (alumnos.length >= 10) {
         document.write(`Lo sentimos no hay cupo ${alumno} <br>`);
     } else {
         alumnos.push(alumno);
@@ -135,6 +133,8 @@ const agregar = (alumno, materia) => {
         document.write(`Felicidaddes ${alumno} te as incrito a ${materia} correctamente¡<br>`);
     }
 };
+document.write(clases["quimica"] + "<br>");
+
 agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");
@@ -153,3 +153,5 @@ agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");
+
+document.write(clases["quimica"] + "<br>");
