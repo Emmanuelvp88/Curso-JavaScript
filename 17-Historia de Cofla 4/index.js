@@ -77,15 +77,18 @@ const cantidadClases = (alumno) => {
             clasesPresentes.push("" + iterador);
         }
     }
+    // Retornamos el alumno, numero de materias y las materias a las que esta inscrito cierto alumno
     return ` El alumno <b style = 'color: blue'>${alumno} </b> esta en  ${contador} cleses. 
     Y son: <b style = 'color: green'>${clasesPresentes}</b><br><br>`;
 };
 
+//montarmos la info de todos los alumnos que estan incritos a las siguientes materias
 mostrarInfo("fisica");
 mostrarInfo("quimica");
 mostrarInfo("programacion");
 mostrarInfo("algebra");
 
+// Mandamos a imprimir la funcion que nos retorna el nombre del alumno y las clases en las que esta incrito
 document.write(cantidadClases("Juan"));
 
 let clases = {
