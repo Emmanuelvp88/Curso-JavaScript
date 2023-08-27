@@ -104,51 +104,50 @@ const agregar = (alumno, materia) => {
         if (materia == "fisica") {
             clases = {
                 fisica: alumnos,
-                quimica: (clases = ["quimica"]),
-                programacion: (clases = ["programacion"]),
-                algebra: (clases = ["algebra"])
+                quimica: (clases["quimica"]),
+                programacion: (clases["programacion"]),
+                algebra: (clases["algebra"]),
             };
         } else if (materia == "quimica") {
             clases = {
-                fisica: (clases = ["fisica"]),
+                fisica: (clases =["fisica"]),
                 quimica: alumnos,
-                programacion: (clases = ["programacion"]),
-                algebra: (clases = ["algebra"])
+                programacion: (clases=["programacion"]),
+                algebra: (clases=["algebra"]),
             };
         } else if (materia == "programacion") {
             clases = {
-                fisica: (clases = ["fisica"]),
-                quimica: (clases = ["quimica"]),
+                fisica: (clases["fisica"]),
+                quimica: (clases["quimica"]),
                 programacion: alumnos,
-                algebra: (clases = ["algebra"])
+                algebra: (clases["algebra"]),
             };
         } else if (materia == "algebra") {
             clases = {
-                fisica: (clases = ["fisica"]),
-                quimica: (clases = ["quimica"]),
-                programacion: (clases = ["programacion"]),
-                algebra: alumnos
+                fisica: (clases["fisica"]),
+                quimica: (clases["quimica"]),
+                programacion: (clases["programacion"]),
+                algebra: alumnos,
             };
         }
         document.write(`Felicidaddes ${alumno} te as incrito a ${materia} correctamente¡<br>`);
     }
 };
+document.write(clases['quimica'] + "<br>");
+
+agregar("Pedrito", "quimica");
+agregar("Cofla", "fisica");
+agregar("Juan", "quimica");
+agregar("Pedrito", "programacion");
+agregar("Abelardo", "programacion");
+agregar("Pedro", "quimica");
+agregar("juan", "quimica");
+agregar("Pedrito", "quimica");
+agregar("Juan", "quimica");
+agregar("Cofla", "quimica");
+agregar("Abelardo", "quimica");
+agregar("pedrito", "quimica");
+agregar("Juan", "quimica");
+agregar("Cofla", "quimica");
+agregar("pedrito", "quimica");
 document.write(clases["quimica"] + "<br>");
-
-agregar("pedrito", "quimica");
-agregar("pedrito", "fisica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "programacion");
-agregar("pedrito", "programacion");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-
-document.write(`los alumnos en la clase de: ${clases['quimica']}`  + "<br>");
