@@ -106,28 +106,28 @@ const agregar = (alumno, materia) => {
                 fisica: alumnos,
                 quimica: (clases = ["quimica"]),
                 programacion: (clases = ["programacion"]),
-                algebra: (clases = ["algebra"]),
+                algebra: (clases = ["algebra"])
             };
         } else if (materia == "quimica") {
             clases = {
                 fisica: (clases = ["fisica"]),
                 quimica: alumnos,
                 programacion: (clases = ["programacion"]),
-                algebra: (clases = ["algebra"]),
+                algebra: (clases = ["algebra"])
             };
         } else if (materia == "programacion") {
             clases = {
                 fisica: (clases = ["fisica"]),
                 quimica: (clases = ["quimica"]),
                 programacion: alumnos,
-                algebra: (clases = ["algebra"]),
+                algebra: (clases = ["algebra"])
             };
         } else if (materia == "algebra") {
             clases = {
                 fisica: (clases = ["fisica"]),
                 quimica: (clases = ["quimica"]),
                 programacion: (clases = ["programacion"]),
-                algebra: alumnos,
+                algebra: alumnos
             };
         }
         document.write(`Felicidaddes ${alumno} te as incrito a ${materia} correctamente¡<br>`);
@@ -136,13 +136,10 @@ const agregar = (alumno, materia) => {
 document.write(clases["quimica"] + "<br>");
 
 agregar("pedrito", "quimica");
+agregar("pedrito", "fisica");
 agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
-agregar("pedrito", "quimica");
+agregar("pedrito", "programacion");
+agregar("pedrito", "programacion");
 agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");
@@ -154,4 +151,4 @@ agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");
 agregar("pedrito", "quimica");
 
-document.write(clases["quimica"] + "<br>");
+document.write(`los alumnos en la clase de: ${clases['quimica']}`  + "<br>");
