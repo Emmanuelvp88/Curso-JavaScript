@@ -13,4 +13,7 @@ document.write(`- console.group() -: Crea un grupo en linea en el regustro de la
 - console.grouoEnd() -: Remueve un grupo en linea en el registro de la consola web. <br>
 - console.groupCollapsed() -: Crea un grupo en la linea pero sontrido, el usuario debe de expandirlo para verlo.<br>`);
 
-document.write(`<h3 style = "font-size: 2em; color: blue; text-align: center">Funciones de Temporizacion</h3>`);
+document.write(`<h3 style = "font-size: 2em; color: blue; text-align: center">Funciones de Temporizacion</h3><br>`);
+document.write(`- console.time() -: Inicia un temporizador. <br>
+- console.timeEnd() -: Rgistra el valor actual de un temporizador. <br>
+- console.timeLog() -: Detiene el temporizador. <br>`);
