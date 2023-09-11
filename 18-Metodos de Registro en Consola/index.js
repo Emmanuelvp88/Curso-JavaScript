@@ -1,4 +1,6 @@
-document.write('<h3 style = "font-size: 2em; color: blue; text-align: center" >Metodoos de registor en Consola</h3>');
+document.write(
+    '<h3 style = "font-size: 2em; color: blue; text-align: center" >Metodoos de registor en Consola</h3>'
+);
 document.write(`- console.assert() -: aparece un mensaje de error en la consola si la afirmacion es falsa. si la afirmacion es verdadera, no aparecera nada. (NO ESTANDAR)<br>
 - console.clear() -: Limpia la consola. <br>
 - console.error() -: muestra un error en la consola web. <br>
@@ -8,12 +10,57 @@ document.write(`- console.assert() -: aparece un mensaje de error en la consola 
 - console.warn() -: imprime un mensaje de advertencia en la consola: <br>
 - console.dir -: Despliega una lista iteractiva de las propiedades del objeto  javascript espesificado. [NO ESTANDAR]<br>`);
 
-document.write(`<h3 style = "font-size: 2em; color: blue; text-align: center"> Funciones de conteo</h3><br>`);
+document.write(
+    `<h3 style = "font-size: 2em; color: blue; text-align: center"> Funciones de conteo</h3><br>`
+);
 document.write(`- console.group() -: Crea un grupo en linea en el regustro de la consola web.<br>
 - console.grouoEnd() -: Remueve un grupo en linea en el registro de la consola web. <br>
 - console.groupCollapsed() -: Crea un grupo en la linea pero sontrido, el usuario debe de expandirlo para verlo.<br>`);
 
-document.write(`<h3 style = "font-size: 2em; color: blue; text-align: center">Funciones de Temporizacion</h3><br>`);
+document.write(
+    `<h3 style = "font-size: 2em; color: blue; text-align: center">Funciones de Temporizacion</h3><br>`
+);
 document.write(`- console.time() -: Inicia un temporizador. <br>
 - console.timeEnd() -: Rgistra el valor actual de un temporizador. <br>
 - console.timeLog() -: Detiene el temporizador. <br>`);
+
+const materias = {
+    fisica: [89, 8, 3, "fisica"],
+    qumica: [90, 9, 2, "quimica"],
+    matematicas: [84, 6, 4, 'matematicas'],
+    logica: [75, 5, 3, 'logica'],
+    calculo: [90, 8, 3, 'calculo'],
+    programacion: [94, 9, 2, 'programacion'],
+    biologia: [83, 6, 4, 'biologia'],
+    BDD: [90, 5, 3, 'BDD'],
+    algebra: [80, 9, 3, 'algebra'],
+};
+
+const promedio = ()=> {
+    for (indice in materias){
+        let asistencia = materias[indice][0];
+        let promedio = materias[indice][1];
+        let trabajos = materias[indice][2];
+        let materia = materias[indice][3]
+        if (asistencia >= 80){
+            console.log(materia);
+            console.log("%c Assistencias suficientes", "color:green");
+        }else{
+            console.log(`${materia}`);
+            console.log("%c Asistencias insuficientes","Color:red");
+        }
+        if(promedio >= 8){
+            console.log("%c Promedio suficiente", "color:green");
+        }else{
+            console.log("%c Promedio Insuficinte", "color:red");
+        }
+        if(trabajos >= 3){
+            console.log("%c Trabajos son suficientes", "color: green");
+        }else{
+            console.log("%c Trabajos son insuficientes", "color: red");
+
+        }
+
+    }   
+}
+promedio();
