@@ -24,6 +24,7 @@ document.write(`- console.time() -: Inicia un temporizador. <br>
 - console.timeEnd() -: Rgistra el valor actual de un temporizador. <br>
 - console.timeLog() -: Detiene el temporizador. <br>`);
 
+document.write("Ahora tienes que abrir la consola 'F12' y continuar viendo ");
 const materias = {
     fisica: [89, 8, 3, "fisica"],
     qumica: [90, 9, 2, "quimica"],
