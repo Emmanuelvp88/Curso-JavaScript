@@ -27,7 +27,8 @@ document.write(
     `<h3 style = "font-size: 2em; color: blue; text-align: center">Funciones de Temporizacion</h3><br>
 - console.time() -: Inicia un temporizador. <br>
 - console.timeEnd() -: Rgistra el valor actual de un temporizador. <br>
-- console.timeLog() -: Detiene el temporizador. <br>`);
+- console.timeLog() -: Detiene el temporizador. <br>`
+);
 
 document.write("Ahora tienes que abrir la consola 'F12' y continuar viendo ");
 const materias = {
