@@ -14,21 +14,18 @@ document.write(
     `<h3 style = "font-size: 2em; color: blue; text-align: center"> Funciones de conteo</h3><br>
     - console.count() -: Registra el numero de veces en la que se ejecuta la misma, osea cuenta las veces
     en la que se ejecuta console.count();  si al agregamos dentro de una funcion por ende contara las veces en las que se ejecuta tal funcion.<br>
-    - console.countReset() -:  Resetea el contador que lleva el console.conunt()
-`
-);
+    - console.countReset() -:  Resetea el contador que lleva el console.conunt()`);
 
 document.write(`<h3 style = " font-size: 2em; color: blue; text-align: center; ">Funciones de Agrupacion</h3>
-- console.group() -: Crea un grupo en linea en el regustro de la consola web.<br>
-- console.grouoEnd() -: Remueve un grupo en linea en el registro de la consola web. <br>
-- console.groupCollapsed() -: Crea un grupo en la linea pero sontrido, el usuario debe de expandirlo para verlo.<br>`);
+- console.group() -: Crea un grupo en linea en el registro de la consola y lo mustra desplegado .<br>
+- console.groupCollapsed() -: Crea un grupo en la linea pero contraido, el usuario debe de expandirlo para verlo.<br>;
+- console.grouoEnd() -: Remueve un grupo en linea en el registro de la consola web. <br>`);
 
 document.write(
     `<h3 style = "font-size: 2em; color: blue; text-align: center">Funciones de Temporizacion</h3><br>
 - console.time() -: Inicia un temporizador. <br>
 - console.timeEnd() -: Rgistra el valor actual de un temporizador. <br>
-- console.timeLog() -: Detiene el temporizador. <br>`
-);
+- console.timeLog() -: Detiene el temporizador. <br>`);
 
 document.write("Ahora tienes que abrir la consola 'F12' y continuar viendo ");
 const materias = {
@@ -42,13 +39,16 @@ const materias = {
     BDD: [90, 5, 3, "BDD"],
     algebra: [80, 9, 3, "algebra"],
 };
-
+// NOTA: Para agragar estilos en console.log(); debemos agragar %c como se mustra a continuacion.
 const promedio = () => {
+    // Recocoremos el array "materias" con un "for in" 
     for (indice in materias) {
+        // metemos cada uno de los datos de array "materias" en variables
         let asistencia = materias[indice][0];
         let promedio = materias[indice][1];
         let trabajos = materias[indice][2];
         let materia = materias[indice][3];
+        // Condicionamos los resultados de los datos para ver si son aprobatorios o no mediante un if
         if (asistencia >= 80) {
             console.log(materia);
             console.log("%c Assistencias suficientes", "color:green");
