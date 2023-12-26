@@ -1,4 +1,4 @@
- materias = {
+materias = {
 	fisica: [89, 8, 3, "fisica"],
 	qumica: [90, 9, 2, "quimica"],
 	matematicas: [84, 6, 4, "matematicas"],
