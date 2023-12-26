@@ -11,7 +11,7 @@ materias = {
 };
 // NOTA: Para agragar estilos en console.log(); debemos agragar %c como se mustra a continuacion.
 const promedio = () => {
-	// Recocoremos el array "materias" con un "for in" 
+	// Recocoremos el array "materias" con un "for in"
 	for (indice in materias) {
 		// metemos cada uno de los datos de array "materias" en variables
 		let asistencia = materias[indice][0];
@@ -40,3 +40,27 @@ const promedio = () => {
 };
 promedio();
 
+// Actividad 2 de la historia de Cofla
+
+let estudio = "100 minutos de estudio";
+let tp = "100 minutos de trabajos practicos";
+let trabajo = "240 minutos de trabajo";
+let homework = " 30 min de tareas en casa";
+let descanso = "10 min de descanso";
+
+for (var i = 0; i < 14; i++) {
+	if (i == 0) {
+		console.group("SEMANA 1");
+	}
+	console.groupCollapsed("dia", i + 1);
+	console.log(tp);
+	console.log(trabajo);
+	console.log(homework);
+	console.log(descanso);
+	console.groupEnd();
+	if (i == 6) {
+		console.groupEnd();
+		console.groupCollapsed("Semana 2");
+	}
+}
+// console.groupEnd();
