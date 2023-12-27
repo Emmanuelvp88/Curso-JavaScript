@@ -63,4 +63,4 @@ for (var i = 0; i < 14; i++) {
 		console.groupCollapsed("Semana 2");
 	}
 }
-// console.groupEnd();
+console.groupEnd();
