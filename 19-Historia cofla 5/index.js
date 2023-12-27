@@ -23,7 +23,7 @@ const promedio = () => {
 			console.log(materia);
 			console.log("%c Assistencias suficientes", "color:green");
 		} else {
-			console.log(`${materia}`);
+			// console.log(`${materia}`);
 			console.log("%c Asistencias insuficientes", "Color:red");
 		}
 		if (promedio >= 8) {
@@ -50,7 +50,7 @@ let descanso = "10 min de descanso";
 
 for (var i = 0; i < 14; i++) {
 	if (i == 0) {
-		console.group("SEMANA 1");
+		console.groupCollapsed("SEMANA 1");
 	}
 	console.groupCollapsed("dia", i + 1);
 	console.log(tp);
@@ -60,7 +60,7 @@ for (var i = 0; i < 14; i++) {
 	console.groupEnd();
 	if (i == 6) {
 		console.groupEnd();
-		console.groupCollapsed("Semana 2");
+		console.groupCollapsed("SEMANA 2");
 	}
 }
 console.groupEnd();
