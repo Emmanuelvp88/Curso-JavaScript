@@ -23,7 +23,11 @@ const promedio = () => {
 			console.log(materia);
 			console.log("%c Assistencias suficientes", "color:green");
 		} else {
+<<<<<<< HEAD
 			console.log(`${materia}`);
+=======
+			// console.log(`${materia}`);
+>>>>>>> 23ab253c5e74914bcf016ac2172e8dd1a950f9ec
 			console.log("%c Asistencias insuficientes", "Color:red");
 		}
 		if (promedio >= 8) {
@@ -50,7 +54,11 @@ let descanso = "10 min de descanso";
 
 for (var i = 0; i < 14; i++) {
 	if (i == 0) {
+<<<<<<< HEAD
 		console.group("SEMANA 1");
+=======
+		console.groupCollapsed("SEMANA 1");
+>>>>>>> 23ab253c5e74914bcf016ac2172e8dd1a950f9ec
 	}
 	console.groupCollapsed("dia", i + 1);
 	console.log(tp);
@@ -60,7 +68,14 @@ for (var i = 0; i < 14; i++) {
 	console.groupEnd();
 	if (i == 6) {
 		console.groupEnd();
+<<<<<<< HEAD
 		console.groupCollapsed("Semana 2");
 	}
 }
 // console.groupEnd();
+=======
+		console.groupCollapsed("SEMANA 2");
+	}
+}
+console.groupEnd();
+>>>>>>> 23ab253c5e74914bcf016ac2172e8dd1a950f9ec
