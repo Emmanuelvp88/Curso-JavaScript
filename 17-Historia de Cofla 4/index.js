@@ -49,7 +49,6 @@ const obtenerInfo = (materia) => {
         return materias;
     }
 };
-
 // Funcion para mostrar la info
 const mostrarInfo = (materia) => {
     // variable donde asignamos la primer funcion que retorna un array
