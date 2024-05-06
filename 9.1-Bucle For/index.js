@@ -19,7 +19,7 @@ for (let i = 0; i <= 15; i++) {
 }
 
 document.write(`<h3>Bucle 'for in'</h3>`);
-//for in lo que hace es recorer los arrays mostrando las posiciones en forma de numeros.
+//for in lo que hace es recorer los arrays mostrando las posiciones del array.
 let fauna = ["perro", "gato", "dinosaurio"];
 for (let animales in fauna) {
     //Mostramos el contenido mediante la variable "animales" que contiene las posiciones en forma de numero.
