@@ -88,7 +88,7 @@ cadena = "   Hola que onda  "
 cadena = cadena.trimStart();
 document.write(`<b>trimStart: </b> con el metodo trimStart la cadena de texto tiene  ${cadena.length} caracteres<br>`);
 
-/*"trimEnd" se encarga de quitar los espacios vacios del principio de una cadena de texto */
+/*"trimEnd" se encarga de quitar los espacios vacios del final de una cadena de texto */
 cadena = "   Hola que onda  "
 cadena = cadena.trimEnd();
 document.write(`<b>trimEnd: </b> con el metodo trimEnd la cadena de texto tiene  ${cadena.length} caracteres<br>`);

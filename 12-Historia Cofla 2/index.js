@@ -41,6 +41,7 @@ const tomarAsistencia = (nombre, p) => {
 //Bucle para tomar la asistencia con la funcion (tomarAsistencia) por 30 dias
 for (i = 0; i < 30; i++) {
     for (alumno in alumnosTotales) {
+        //le pasamos los parametros "nombre" y "p" a la funcion tomarAsistencia 
         tomarAsistencia(alumnosTotales[alumno][0], alumno);
     }
 }
