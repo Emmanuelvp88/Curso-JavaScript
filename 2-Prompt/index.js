@@ -1,5 +1,5 @@
 let name = prompt("what is your name?");
-alert("Has ingresado esto: " + name);
+alert(`Has ingresado esto:   ${name}`);
 
 /*
 *alert*
