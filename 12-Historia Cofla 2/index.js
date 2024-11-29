@@ -1,4 +1,4 @@
-//Cadenero de la discoteca, si eres menos de edad no te deja pasar
+ //Cadenero de la discoteca, si eres menos de edad no te deja pasar
 //Si eres mayor de edad y el primero en llegar despues de las 2am entras gratis
 let free = false;
 const entrada = (time) => {
